@@ -1,0 +1,157 @@
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+
+if [ -f $HOME/.nethackrc ]; then
+	export NETHACKOPTIONS="$HOME/.nethackrc"
+fi
+
+export VI=vim
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+umask 027
+
+if [ "$HOSTNAME" == "" ]; then
+	export HOSTNAME=`hostname`
+fi
+
+if [ "$DISPLAY" == "" ]; then
+	export DISPLAY="$HOSTNAME:0.0"
+fi
+
+if [ "$TZ" == "" ]; then
+	export TZ="Etc/UTC"
+fi
+
+if [ "$BASH" == "" ]; then
+	if [ -x /bin/bash ]; then
+		export BASH="/bin/bash"
+	elif [ -x /usr/bin/bash ]; then
+		export BASH="/usr/bin/bash"
+	else
+		HAS_BASH=`which bash`
+		if [ "$HAS_BASH" != "" ]; then
+			export BASH="bash"
+		fi
+		unset HAS_BASH
+	fi
+fi
+
+if [ -f $HOME/log4j2.properties ]; then
+	export LOG4J2_CONF="$HOME/log4j2.properties"
+fi
+
+# only add $HOME/bin to the PATH if it exists
+if [ -d "$HOME/bin" ]; then
+	HOME_BIN_IN_PATH=`echo $PATH | grep "$HOME/bin"`
+	if [ "$HOME_BIN_IN_PATH" == "" ]; then
+		export PATH="$HOME/bin:$PATH"
+	fi
+	unset HOME_BIN_IN_PATH
+fi
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+		. "$HOME/.bashrc"
+    fi
+fi
+
+# GPG needs to know what terminal to use for signing tags
+export GPG_TTY=$(tty)
+
+# Force Linux Git implementation
+export GIT="git"
+export GIT_EDITOR="vim"
+
+$GIT config --global credential.helper 'cache'
+$GIT config --global core.editor "vim"
+$GIT config --global user.name "Your Name Here"
+$GIT config --global user.email "your@email.address"
+$GIT config --global user.signingkey XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+$GIT config --global user.gpgsign true
+
+# Always use locally installed ant, as that is the latest release, despite Ubuntu LTS OS
+
+if [ -d $HOME/bin/apache-ant-1.10.7 ]; then
+	export ANT_HOME=$HOME/bin/apache-ant-1.10.7
+	export ANT_BINDIR=$ANT_HOME/bin
+	export ANT_LIB=$ANT_HOME/lib
+	export ANT="ant"
+	ANT_IN_PATH=`echo $PATH | grep 'apache-ant-1.10.7/bin'`
+	if [ "$ANT_IN_PATH" == "" ]; then
+		export PATH="$ANT_HOME/bin:$PATH"
+	fi
+	unset ANT_IN_PATH
+else
+	ANT_IS_LOCAL=`which ant | grep usr/bin`
+	if [ "$ANT_IS_LOCAL" != "" ]; then
+		export ANT="ant"
+		unset ANT_HOME
+		unset ANT_BINDIR
+		unset ANT_LIB
+	else
+		ANT_AVAILABLE=`which ant`
+		if [ "$ANT_AVAILABLE" == "" ]; then
+			echo "ERROR: Could not find Apache ant"
+			unset ANT
+		else
+			export ANT="ant"
+		fi
+		unset ANT_AVAILABLE
+	fi
+	unset ANT_IS_LOCAL
+fi
+
+# Prefer the system's OpenJFX 11 implementation
+if [ -d /usr/share/openjfx ]; then
+	export JFX_HOME=/usr/share/openjfx
+	export PATH_TO_FX="$JFX_HOME/lib"
+	export PATH="$PATH_TO_FX:$PATH"
+elif [ -d $HOME/bin/javafx-sdk-11.0.2 ]; then
+	export JFX_HOME=$HOME/bin/javafx-sdk-11.0.2
+	export PATH_TO_FX="$JFX_HOME/lib"
+	export PATH="$PATH_TO_FX:$PATH"
+elif [ "$JFX_HOME" != "" ]; then
+	if [ -d "$JFX_HOME" ]; then
+		if [ -d "$JFX_HOME/lib" ]; then
+			export PATH_TO_FX="$JFX_HOME/lib"
+			export PATH="$PATH_TO_FX:$PATH"
+		else
+			unset PATH_TO_FX
+			unset JFX_HOME
+		fi
+	else
+		unset PATH_TO_FX
+		unset JFX_HOME
+	fi
+fi
+
+# Use default system installation of openjdk 11.0.7 for Java
+export JSEP=":"
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JDK_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVAC="javac"
+export JAVA="java"
+export PATH="$JDK_HOME/bin:$JDK_HOME/lib:$PATH"
+unset JAVAEXE
+unset JAVACEXE
+export JAVACMD="$JAVA_HOME/bin/$JAVA"
+export JAVACCMD="$JDK_HOME/bin/$JAVAC"
+
+# Check for Tomcat 9.0.10 and make sure it is on the path
+if [ "$CATALINA_HOME" == "" ]; then
+	if [ -d "$HOME/bin/apache-tomcat-9.0.10" ]; then
+		export CATALINA_HOME="$HOME/bin/apache-tomcat-9.0.10"
+	fi
+fi
+if [ "$CATALINA_HOME" != "" ]; then
+	CATALINA_BIN_IN_PATH=`echo $PATH | grep "$CATALINA_HOME/bin"`
+	if [ "$CATALINA_BIN_IN_PATH" == "" ]; then
+		export PATH="$PATH:$CATALINA_HOME/bin"
+	fi
+fi

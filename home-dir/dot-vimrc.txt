@@ -1,0 +1,6 @@
+set tabstop=4
+set nobackup
+set ruler
+map #C :'a,.w! /home/msobkow/.marktemp
+map #P :.r /home/msobkow/.marktemp
+map #N :1,$s/(c) 2019 Mark Stephen Sobkow/(c) 2019-2020 Mark Stephen Sobkow/:w:n
