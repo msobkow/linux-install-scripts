@@ -64,10 +64,10 @@ if [ -f $HOME/Downloads/virtuoso-opensource.x86_64-generic_glibc25-linux-gnu.tar
 		sudo mkdir /opt/virtuoso/7.2.5
 		sudo chown virtuoso.virtuoso /opt/virtuoso/7.2.5
 		sudo chmod 755 /opt/virtuoso/7.2.5
+		pushd /opt/virtuoso/7.2.5
+		sudo tar xvfz $HOME/Downloads/virtuoso-opensource.x86_64-generic_glibc25-linux-gnu.tar.gz
+		popd
+		sudo chown -R virtuoso.virtuoso /opt/virtuoso/7.2.5
 	fi
-	pushd /opt/virtuoso/7.2.5
-	sudo tar xvfz $HOME/Downloads/virtuoso-opensource.x86_64-generic_glibc25-linux-gnu.tar.gz
-	popd
-	sudo chown -R virtuoso.virtuoso /opt/virtuoso/7.2.5
 fi
 
