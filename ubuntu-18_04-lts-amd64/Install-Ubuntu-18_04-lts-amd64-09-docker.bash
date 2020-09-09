@@ -15,6 +15,12 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-
-sudo apt-get install virtuoso-opensource virtuoso-vad-bpel virtuoso-vad-conductor virtuoso-vad-demo virtuoso-vad-doc virtuoso-vad-isparql virtuoso-vad-ods virtuoso-vad-rdfmappers virtuoso-vad-sparqldemo virtuoso-vad-syncml virtuoso-vad-tutorial libvirtodbc0
+sudo apt-get install debocker docker docker-compose docker-containerd docker-doc docker-registry docker-runc docker.io docker2aci vim-syntax-docker
+#golang-github-docker-distribution-dev - Docker toolset to pack, ship, store, and deliver content (source)
+#golang-github-docker-libnetwork-dev - Docker Networking
+#golang-github-fsouza-go-dockerclient-dev - Docker client library in Go
+#golang-github-samalba-dockerclient-dev - Docker client library in Go
+#golang-libnetwork - Docker Networking
+#moby-cli - Docker container platform (client package)
+#moby-engine - Docker container platform (engine package)
 

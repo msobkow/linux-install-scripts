@@ -15,6 +15,4 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-
-sudo apt-get install virtuoso-opensource virtuoso-vad-bpel virtuoso-vad-conductor virtuoso-vad-demo virtuoso-vad-doc virtuoso-vad-isparql virtuoso-vad-ods virtuoso-vad-rdfmappers virtuoso-vad-sparqldemo virtuoso-vad-syncml virtuoso-vad-tutorial libvirtodbc0
-
+sudo apt-get install python3 python3-venv
