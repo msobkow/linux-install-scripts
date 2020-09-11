@@ -15,4 +15,5 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install glewlwyd glewlwyd-common
+#sudo apt-get install glewlwyd glewlwyd-common
+echo "Sorry, but glewlwyd installations for 20.04.1 are broken as of 2020-09-11 and I haven't checked to see if it is fixed yet - Mark Sobkow"
