@@ -15,4 +15,4 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install python3 python3-venv
+sudo apt-get install gir1.2-graphene-1.0 libgraphene-1.0-0 libgraphene-1.0-dev libgraphene-doc
