@@ -15,7 +15,7 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install debocker docker docker-compose docker-containerd docker-doc docker-registry docker-runc docker.io docker2aci vim-syntax-docker
+sudo apt-get install debocker docker docker-compose docker-doc docker-registry docker.io docker2aci vim-syntax-docker
 #golang-github-docker-distribution-dev - Docker toolset to pack, ship, store, and deliver content (source)
 #golang-github-docker-libnetwork-dev - Docker Networking
 #golang-github-fsouza-go-dockerclient-dev - Docker client library in Go
