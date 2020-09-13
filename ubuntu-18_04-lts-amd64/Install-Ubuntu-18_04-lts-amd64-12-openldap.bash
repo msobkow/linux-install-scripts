@@ -15,4 +15,4 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install glewlwyd glewlwyd-common
+sudo apt-get install ldap-utils libldap-common libldap2-dev slapd libldap-2.4.2
