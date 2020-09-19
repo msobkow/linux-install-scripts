@@ -15,7 +15,8 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g libcbor0 pkg-config sqlite3-doc
+sudo apt-get install sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g pkg-config sqlite3-doc libcbor-dev libcbor0.6
+
 #
 #	Do source builds instead of installing the broken 20.04.1 packages
 #
