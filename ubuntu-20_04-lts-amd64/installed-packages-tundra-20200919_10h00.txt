@@ -285,9 +285,6 @@ libxz-java is already the newest version (1.8-2).
 libyaml-snake-java is already the newest version (1.25+ds-2).
 libyaml-snake-java-doc is already the newest version (1.25+ds-2).
 linux-libc-dev is already the newest version (5.4.0-47.51).
-lirc-compat-remotes is already the newest version (0.9.0-1.1).
-lirc-drv-irman is already the newest version (0.5.2-5).
-lirc-x is already the newest version (0.10.1-6.1ubuntu1.1).
 lrzip is already the newest version (0.631+git180528-1build1).
 lzip is already the newest version (1.21-6build1).
 m4 is already the newest version (1.4.18-4).
