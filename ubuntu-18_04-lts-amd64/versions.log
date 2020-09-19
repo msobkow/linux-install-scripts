@@ -1,0 +1,820 @@
+Script started on 2020-09-19 13:59:50+0000
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ls
+Install-Ubuntu-18_04-lts-amd64-00-bind9.bash*	    Install-Ubuntu-18_04-lts-amd64-06-virtuoso.bash*   Install-Ubuntu-18_04-lts-amd64-12-openldap.bash*
+Install-Ubuntu-18_04-lts-amd64-01-base.bash*	    Install-Ubuntu-18_04-lts-amd64-07-gitserver.bash*  Install-Ubuntu-18_04-lts-amd64-13-apache.bash*
+Install-Ubuntu-18_04-lts-amd64-02-gui.bash*	    Install-Ubuntu-18_04-lts-amd64-08-docker.bash*     Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash*
+Install-Ubuntu-18_04-lts-amd64-03-java.bash*	    Install-Ubuntu-18_04-lts-amd64-09-mqtt.bash*       marktemp
+Install-Ubuntu-18_04-lts-amd64-04-postgresql.bash*  Install-Ubuntu-18_04-lts-amd64-10-python3.bash*    versions.log
+Install-Ubuntu-18_04-lts-amd64-05-mysql.bash*	    Install-Ubuntu-18_04-lts-amd64-11-graphene.bash*
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-01-base.bash 
+[sudo] password for msobkow: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+autoconf is already the newest version (2.69-11).
+autoconf-doc is already the newest version (2.69-11).
+automake is already the newest version (1:1.15.1-3ubuntu2).
+autopkgtest is already the newest version (5.3.1).
+autotools-dev is already the newest version (20180224.1).
+bison is already the newest version (2:3.0.4.dfsg-1build1).
+bzr is already the newest version (2.7.0+bzr6622-10).
+devhelp is already the newest version (3.28.1-1).
+dh-make is already the newest version (2.201701).
+doxygen is already the newest version (1.8.13-10).
+findutils is already the newest version (4.6.0+git+20170828-2).
+flex is already the newest version (2.6.4-6).
+gnu-standards is already the newest version (2010.03.11-1).
+gzip is already the newest version (1.6-5ubuntu1).
+libapr1-dev is already the newest version (1.6.3-2).
+libaprutil1-dev is already the newest version (1.6.1-2).
+libbsd-resource-perl is already the newest version (1.2911-1build2).
+libcap-ng0 is already the newest version (0.7.7-3.1).
+libcap2 is already the newest version (1:2.25-1.2).
+libcap2-bin is already the newest version (1:2.25-1.2).
+libfile-fcntllock-perl is already the newest version (0.22-3build2).
+libgmp10-doc is already the newest version (2:6.1.2+dfsg-2).
+libmime-tools-perl is already the newest version (5.509-1).
+libmpfr-dev is already the newest version (4.0.1-1).
+libmpfr-doc is already the newest version (4.0.1-1).
+libnet-patricia-perl is already the newest version (1.22-1build4).
+libpam-cap is already the newest version (1:2.25-1.2).
+libpthread-stubs0-dev is already the newest version (0.3-4).
+libtool is already the newest version (2.4.6-2).
+libtool-doc is already the newest version (2.4.6-2).
+libxml-libxml-perl is already the newest version (2.0128+dfsg-5).
+m4-doc is already the newest version (1.4.18-1).
+make is already the newest version (4.1-9.1ubuntu1).
+make-doc is already the newest version (4.2.1-1).
+manpages is already the newest version (4.15-1).
+manpages-dev is already the newest version (4.15-1).
+setserial is already the newest version (2.17-50).
+unzip is already the newest version (6.0-21ubuntu1).
+zip is already the newest version (3.0-11build1).
+autoconf-archive is already the newest version (20170928-2).
+debtags is already the newest version (2.1.5).
+docbook-xsl-doc-html is already the newest version (1.78.1-1).
+docbook-xsl-doc-pdf is already the newest version (1.78.1-1).
+docbook-xsl-doc-text is already the newest version (1.78.1-1).
+docbook-xsl-saxon is already the newest version (1.00.dfsg.1-7).
+exfat-utils is already the newest version (1.2.8-1).
+fancontrol is already the newest version (1:3.4.0-4).
+gdal-bin is already the newest version (2.2.3+dfsg-2).
+geotiff-bin is already the newest version (1.4.2-2build1).
+gmpc is already the newest version (11.8.16-13).
+i2c-tools is already the newest version (4.0-2).
+ir-keytable is already the newest version (1.14.2-1).
+libcrypt-ssleay-perl is already the newest version (0.73.04-2build2).
+libdb1-compat is already the newest version (2.1.3-20).
+libencode-detect-perl is already the newest version (1.01-5).
+libmldbm-perl is already the newest version (2.05-2).
+libmojolicious-perl is already the newest version (7.59+dfsg-1ubuntu1).
+libmpfrc++-dev is already the newest version (3.6.5+ds-2).
+libnet-daemon-perl is already the newest version (0.48-1.1).
+libtest-fatal-perl is already the newest version (0.014-1).
+libtext-autoformat-perl is already the newest version (1.740000-2).
+libunicode-map8-perl is already the newest version (0.13+dfsg-4build4).
+libunicode-string-perl is already the newest version (2.10-1build1).
+libxerces-c-dev is already the newest version (3.2.0+debian-2).
+libxerces-c-doc is already the newest version (3.2.0+debian-2).
+libxerces-c3.2 is already the newest version (3.2.0+debian-2).
+libxml-sax-expatxs-perl is already the newest version (1.33-2build3).
+lirc-compat-remotes is already the newest version (0.9.0-1).
+lirc-drv-irman is already the newest version (0.5.2-1build1).
+lirc-x is already the newest version (0.10.0-2).
+lrzip is already the newest version (0.631-1).
+lzip is already the newest version (1.20-1).
+psutils is already the newest version (1.17.dfsg-4).
+read-edid is already the newest version (3.0.2-1build1).
+spellutils is already the newest version (0.7-7build1).
+ssh-askpass is already the newest version (1:1.2.4.1-10).
+tcl-tclreadline is already the newest version (2.1.0-15).
+tree is already the newest version (1.7.0-5).
+uuid is already the newest version (1.6.2-1.5build4).
+weblint-perl is already the newest version (2.26+dfsg-1).
+gmp-doc is already the newest version (6.0.0-1).
+libhwloc-contrib-plugins is already the newest version (1.11.9-1build1).
+p7zip-rar is already the newest version (16.02-2).
+rar is already the newest version (2:5.5.0-1).
+unrar is already the newest version (1:5.5.8-1).
+apt is already the newest version (1.6.12ubuntu0.1).
+aspell-doc is already the newest version (0.60.7~20110707-4ubuntu0.1).
+bash is already the newest version (4.4.18-2ubuntu1.2).
+binutils-doc is already the newest version (2.30-21ubuntu1~18.04.4).
+binutils-multiarch is already the newest version (2.30-21ubuntu1~18.04.4).
+bzip2 is already the newest version (1.0.6-8.1ubuntu0.2).
+cifs-utils is already the newest version (2:6.8-1ubuntu1).
+cmake is already the newest version (3.10.2-1ubuntu2.18.04.1).
+cmake-doc is already the newest version (3.10.2-1ubuntu2.18.04.1).
+cpp-doc is already the newest version (4:7.4.0-1ubuntu2.3).
+devscripts is already the newest version (2.17.12ubuntu1.1).
+dnsutils is already the newest version (1:9.11.3+dfsg-1ubuntu1.13).
+dpkg is already the newest version (1.19.0.5ubuntu2.3).
+dpkg-dev is already the newest version (1.19.0.5ubuntu2.3).
+g++-multilib is already the newest version (4:7.4.0-1ubuntu2.3).
+gcc is already the newest version (4:7.4.0-1ubuntu2.3).
+gcc-doc is already the newest version (4:7.4.0-1ubuntu2.3).
+gdb is already the newest version (8.1-0ubuntu3.2).
+gdb-doc is already the newest version (8.1-0ubuntu3.2).
+gettext is already the newest version (0.19.8.1-6ubuntu0.3).
+gettext-doc is already the newest version (0.19.8.1-6ubuntu0.3).
+git is already the newest version (1:2.17.1-1ubuntu0.7).
+icu-doc is already the newest version (60.2-3ubuntu3.1).
+libc-bin is already the newest version (2.27-3ubuntu1.2).
+libc-dev-bin is already the newest version (2.27-3ubuntu1.2).
+libdbi-perl is already the newest version (1.640-1ubuntu0.1).
+libparted-dev is already the newest version (3.2-20ubuntu0.2).
+libssl-dev is already the newest version (1.1.1-1ubuntu2.1~18.04.6).
+libssl-doc is already the newest version (1.1.1-1ubuntu2.1~18.04.6).
+libstdc++-8-doc is already the newest version (8.4.0-1ubuntu1~18.04).
+linux-libc-dev is already the newest version (4.15.0-117.118).
+samba is already the newest version (2:4.7.6+dfsg~ubuntu-0ubuntu2.19).
+smbclient is already the newest version (2:4.7.6+dfsg~ubuntu-0ubuntu2.19).
+ssh is already the newest version (1:7.6p1-4ubuntu0.3).
+sysstat is already the newest version (11.6.1-1ubuntu0.1).
+texlive-binaries is already the newest version (2017.20170613.44572-8ubuntu0.1).
+uuid-dev is already the newest version (2.31.1-0.4ubuntu3.7).
+valgrind is already the newest version (1:3.13.0-2ubuntu2.3).
+valgrind-dbg is already the newest version (1:3.13.0-2ubuntu2.3).
+vim-common is already the newest version (2:8.0.1453-1ubuntu1.3).
+csh is already the newest version (20110502-3ubuntu0.18.04.1).
+f2fs-tools is already the newest version (1.11.0-1.1~18.04).
+gcc-8-doc is already the newest version (8.4.0-1ubuntu1~18.04).
+gcc-8-locales is already the newest version (8.4.0-1ubuntu1~18.04).
+gnupg-agent is already the newest version (2.2.4-1ubuntu1.3).
+gnupg2 is already the newest version (2.2.4-1ubuntu1.3).
+lib32stdc++6-8-dbg is already the newest version (8.4.0-1ubuntu1~18.04).
+libx32stdc++6-8-dbg is already the newest version (8.4.0-1ubuntu1~18.04).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-01-base.bash [K[K[K[K[K[K[K[K[K[K[K[K2-gui.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+fonts-freefont-ttf is already the newest version (20120503-7).
+libxt-doc is already the newest version (1:1.1.5-1).
+xorg-docs is already the newest version (1:1.7.1-1.1).
+filezilla is already the newest version (3.28.0-1).
+fonts-freefont-otf is already the newest version (20120503-7).
+fonts-ipafont-gothic is already the newest version (00303-18ubuntu1).
+gnome is already the newest version (1:3.22+9).
+gnome-brave-icon-theme is already the newest version (5.5.1-2ubuntu2).
+gnome-human-icon-theme is already the newest version (5.5.1-2ubuntu2).
+gnome-humility-icon-theme is already the newest version (0.3+repack1-0ubuntu1).
+gnome-icon-theme is already the newest version (3.12.0-3).
+gnome-illustrious-icon-theme is already the newest version (5.5.1-2ubuntu2).
+gnome-noble-icon-theme is already the newest version (5.5.1-2ubuntu2).
+gnome-themes-standard is already the newest version (3.28-1ubuntu1).
+libfont-freetype-perl is already the newest version (0.09-1build1).
+libxml-sax-expatxs-perl is already the newest version (1.33-2build3).
+mesa-utils is already the newest version (8.4.0-1).
+shiki-brave-theme is already the newest version (4.6-2ubuntu1).
+shiki-human-theme is already the newest version (4.6-2ubuntu1).
+shiki-illustrious-theme is already the newest version (4.6-2ubuntu1).
+shiki-noble-theme is already the newest version (4.6-2ubuntu1).
+streamer is already the newest version (3.103-4build1).
+x11-xfs-utils is already the newest version (7.7+2build1).
+xdaliclock is already the newest version (2.43+debian-2).
+xfishtank is already the newest version (2.5-1build1).
+xfonts-100dpi is already the newest version (1:1.0.4+nmu1).
+xfonts-75dpi is already the newest version (1:1.0.4+nmu1).
+xml-twig-tools is already the newest version (1:3.50-1).
+xscreensaver is already the newest version (5.36-1ubuntu1).
+xscreensaver-data is already the newest version (5.36-1ubuntu1).
+xscreensaver-data-extra is already the newest version (5.36-1ubuntu1).
+xscreensaver-gl is already the newest version (5.36-1ubuntu1).
+xscreensaver-gl-extra is already the newest version (5.36-1ubuntu1).
+xsensors is already the newest version (0.70-3build1).
+xterm is already the newest version (330-1ubuntu2).
+libx11-doc is already the newest version (2:1.6.4-3ubuntu0.3).
+libxcb-doc is already the newest version (1.13-2~ubuntu18.04).
+xsltproc is already the newest version (1.1.29-5ubuntu0.2).
+fonts-lyx is already the newest version (2.2.4-0ubuntu0.18.04.1).
+mesa-opencl-icd is already the newest version (20.0.8-0ubuntu1~18.04.1).
+xapian-tools is already the newest version (1.4.5-1ubuntu0.1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-02-gui.bash [K[K[K[K[K[K[K[K[K[K[K3-java.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+findbugs is already the newest version (3.1.0~preview2-3).
+java-wrappers is already the newest version (0.3).
+javacc is already the newest version (5.0-8).
+javacc-doc is already the newest version (5.0-8).
+javahelp2-doc is already the newest version (2.0.05.ds1-9).
+junit is already the newest version (3.8.2-9).
+junit-doc is already the newest version (3.8.2-9).
+libavalon-framework-java is already the newest version (4.2.0-10).
+libavalon-framework-java-doc is already the newest version (4.2.0-10).
+libbcel-java-doc is already the newest version (6.2-1).
+libbcpg-java is already the newest version (1.59-1).
+libbcpg-java-doc is already the newest version (1.59-1).
+libbcpkix-java is already the newest version (1.59-1).
+libbcpkix-java-doc is already the newest version (1.59-1).
+libbcprov-java is already the newest version (1.59-1).
+libbcprov-java-doc is already the newest version (1.59-1).
+libbsf-java is already the newest version (1:2.4.0-5build1).
+libcommons-beanutils-java is already the newest version (1.9.3-1).
+libcommons-beanutils-java-doc is already the newest version (1.9.3-1).
+libcommons-cli-java is already the newest version (1.4-1).
+libcommons-codec-java is already the newest version (1.11-1).
+libcommons-codec-java-doc is already the newest version (1.11-1).
+libcommons-csv-java is already the newest version (1.5-1).
+libcommons-fileupload-java is already the newest version (1.3.3-1).
+libcommons-fileupload-java-doc is already the newest version (1.3.3-1).
+libcommons-io-java is already the newest version (2.6-2).
+libcommons-io-java-doc is already the newest version (2.6-2).
+libcommons-lang-java is already the newest version (2.6-8).
+libcommons-lang-java-doc is already the newest version (2.6-8).
+libcommons-logging-java is already the newest version (1.2-2).
+libcommons-logging-java-doc is already the newest version (1.2-2).
+libcommons-math3-java is already the newest version (3.6.1-3).
+libcommons-net-java is already the newest version (3.6-1).
+libcommons-net-java-doc is already the newest version (3.6-1).
+libcommons-parent-java is already the newest version (43-1).
+libcommons-pool-java is already the newest version (1.6-3).
+libcompress-lzf-java is already the newest version (1.0.3-1).
+libconcurrent-java is already the newest version (1.3.4-4).
+libdisruptor-java is already the newest version (3.3.8-1).
+libdom4j-java is already the newest version (2.1.0-2).
+libdom4j-java-doc is already the newest version (2.1.0-2).
+libexcalibur-logkit-java is already the newest version (2.0-12).
+libfelix-framework-java-doc is already the newest version (4.6.1-2).
+libfelix-main-java-doc is already the newest version (5.0.0-5).
+libgeronimo-jms-1.1-spec-java is already the newest version (1.1-1.2ubuntu3).
+libhawtjni-runtime-java is already the newest version (1.15-2).
+libhttpclient-java is already the newest version (4.5.5-1).
+libhttpcore-java is already the newest version (4.4.9-1).
+libisorelax-java is already the newest version (20041111-10).
+libjackson2-annotations-java is already the newest version (2.9.4-1).
+libjackson2-annotations-java-doc is already the newest version (2.9.4-1).
+libjackson2-dataformat-yaml is already the newest version (2.8.10-3).
+libjackson2-dataformat-yaml-doc is already the newest version (2.8.10-3).
+libjansi-java is already the newest version (1.16-1).
+libjansi-native-java is already the newest version (1.7-1).
+libjaxen-java is already the newest version (1.1.6-3).
+libjaxp1.3-java is already the newest version (1.3.05-5).
+libjcip-annotations-java is already the newest version (20060626-5).
+libjdepend-java is already the newest version (2.9.1-1).
+libjeromq-java is already the newest version (0.3.6-1).
+libjformatstring-java is already the newest version (0.10~20131207-2).
+libjline-java-doc is already the newest version (1.0-2).
+libjna-java is already the newest version (4.5.1-1).
+libjna-java-doc is already the newest version (4.5.1-1).
+libjna-jni is already the newest version (4.5.1-1).
+libjna-platform-java is already the newest version (4.5.1-1).
+libjnr-ffi-java-doc is already the newest version (2.1.7-1).
+libjnr-netdb-java-doc is already the newest version (1.1.6-1).
+libjpa-2.1-spec-java is already the newest version (2.1.0.v201304241213-1).
+libjsch-agent-proxy-java is already the newest version (0.0.8-2ubuntu1).
+libjsch-java is already the newest version (0.1.54-1).
+libjzlib-java is already the newest version (1.1.3-2).
+liblightcouch-java is already the newest version (0.0.6-1).
+liblog4j2-java is already the newest version (2.10.0-2).
+liblog4j2-java-doc is already the newest version (2.10.0-2).
+libnekohtml-java is already the newest version (1.9.22-1).
+libnekohtml-java-doc is already the newest version (1.9.22-1).
+liboro-java is already the newest version (2.0.8a-12).
+libosgi-annotation-java-doc is already the newest version (6.0.0-2).
+libosgi-compendium-java-doc is already the newest version (6.0.0-1).
+libosgi-core-java-doc is already the newest version (6.0.0-1).
+libprotobuf-java is already the newest version (3.0.0-9.1ubuntu1).
+libqdox-java-doc is already the newest version (1.12.1-3).
+libregexp-java is already the newest version (1.5-4).
+librelaxng-datatype-java is already the newest version (1.0+ds1-3).
+librhino-java-doc is already the newest version (1.7.7.1-1).
+libslf4j-java is already the newest version (1.7.25-3).
+libstax-java is already the newest version (1.2.0-4).
+libstax-java-doc is already the newest version (1.2.0-4).
+libswing-layout-java-doc is already the newest version (1.0.4-4).
+libxalan2-java is already the newest version (2.7.2-1).
+libxerces2-java is already the newest version (2.11.0-8).
+libxerces2-java-doc is already the newest version (2.11.0-8).
+libxml-commons-external-java is already the newest version (1.4.01-3).
+libxml-commons-resolver1.1-java is already the newest version (1.2-9).
+libxml-commons-resolver1.1-java-doc is already the newest version (1.2-9).
+libxmlgraphics-commons-java-doc is already the newest version (2.2-1).
+libxom-java is already the newest version (1.2.10-1).
+libxom-java-doc is already the newest version (1.2.10-1).
+libxpp2-java is already the newest version (2.1.10-8).
+libxpp3-java is already the newest version (1.1.4c-3).
+libxslthl-java is already the newest version (2.1.3-5).
+libxz-java is already the newest version (1.8-1).
+parted-doc is already the newest version (3.2-20ubuntu0.2).
+junit4 is already the newest version (4.12-8~18.04).
+jython is already the newest version (2.7.1+repack-5~18.04).
+jython-doc is already the newest version (2.7.1+repack-5~18.04).
+libcommons-collections3-java is already the newest version (3.2.2-2~18.04).
+libcommons-collections3-java-doc is already the newest version (3.2.2-2~18.04).
+libcommons-compress-java is already the newest version (1.18-1~18.04).
+libcommons-httpclient-java is already the newest version (3.1-15~18.04).
+libcommons-httpclient-java-doc is already the newest version (3.1-15~18.04).
+libjackson2-core-java is already the newest version (2.9.8-3~18.04).
+libjackson2-core-java-doc is already the newest version (2.9.8-3~18.04).
+libjackson2-databind-java is already the newest version (2.9.8-1~18.04).
+libjackson2-databind-java-doc is already the newest version (2.9.8-1~18.04).
+libjackson2-dataformat-xml-java is already the newest version (2.9.8-1~18.04).
+libjackson2-dataformat-xml-java-doc is already the newest version (2.9.8-1~18.04).
+libjackson2-module-jaxb-annotations-java is already the newest version (2.8.10-4~18.04).
+libjcommander-java is already the newest version (1.71-3~18.04).
+libjcommander-java-doc is already the newest version (1.71-3~18.04).
+libjdom1-java is already the newest version (1.1.3-2~18.04).
+libjdom1-java-doc is already the newest version (1.1.3-2~18.04).
+libjnr-posix-java-doc is already the newest version (3.0.45-2~18.04).
+liblog4j1.2-java is already the newest version (1.2.17-8+deb10u1build0.18.04.1).
+liblog4j1.2-java-doc is already the newest version (1.2.17-8+deb10u1build0.18.04.1).
+libmariadb-java is already the newest version (2.3.0-1~18.04).
+libmongodb-java is already the newest version (3.6.3-2~18.04).
+libmsv-java is already the newest version (2009.1+dfsg1-6~18.04).
+libopenjfx-java is already the newest version (11.0.2+1-1~18.04.2).
+libopenjfx-java-doc is already the newest version (11.0.2+1-1~18.04.2).
+libopenjfx-jni is already the newest version (11.0.2+1-1~18.04.2).
+libstax2-api-java is already the newest version (4.1-1~18.04).
+libwoodstox-java is already the newest version (1:5.1.0-2~18.04).
+libyaml-snake-java is already the newest version (1.23-1~18.04).
+libyaml-snake-java-doc is already the newest version (1.23-1~18.04).
+maven is already the newest version (3.6.0-1~18.04.1).
+openjfx is already the newest version (11.0.2+1-1~18.04.2).
+openjfx-source is already the newest version (11.0.2+1-1~18.04.2).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-03-java.bash [K[K[K[K[K[K[K[K[K[K[K[K4-postgresql.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+libdbd-pgsql is already the newest version (0.9.0-5ubuntu2).
+odbcinst is already the newest version (2.3.4-1.1ubuntu3).
+php-odbc is already the newest version (1:7.2+60ubuntu1).
+php-pgsql is already the newest version (1:7.2+60ubuntu1).
+unixodbc-dev is already the newest version (2.3.4-1.1ubuntu3).
+golang-gopkg-pg.v5-dev is already the newest version (5.3.3-2).
+libkdb3-driver-postgresql is already the newest version (3.1.0-2).
+libnpgsql-cil-dev is already the newest version (2.2.7+dfsg3-1).
+libpgobject-util-dbadmin-perl is already the newest version (0.100.0-1).
+libpostgresql-jdbc-java is already the newest version (9.4.1212-1).
+libpostgresql-jdbc-java-doc is already the newest version (9.4.1212-1).
+odbc-postgresql is already the newest version (1:10.01.0000-1).
+pfm is already the newest version (2.0.8-2).
+pg-rage-terminator-10 is already the newest version (0.1.6-2).
+pgadmin3 is already the newest version (1.22.2-4).
+pgadmin3-data is already the newest version (1.22.2-4).
+pgmodeler is already the newest version (0.9.1~beta-1).
+pgtop is already the newest version (3.7.0-2build2).
+postgresql-10-amcheck is already the newest version (1.3-1).
+postgresql-10-asn1oid is already the newest version (1.2-1).
+postgresql-10-bgw-replstatus is already the newest version (1.0.2).
+postgresql-10-citus is already the newest version (7.0.3.PGDG-1).
+postgresql-10-cron is already the newest version (1.0.2-1).
+postgresql-10-debversion is already the newest version (1.1-1).
+postgresql-10-dirtyread is already the newest version (1.3).
+postgresql-10-ip4r is already the newest version (2.2-2).
+postgresql-10-jsquery is already the newest version (1.0.1-1).
+postgresql-10-mimeo is already the newest version (1.5.1-2).
+postgresql-10-mysql-fdw is already the newest version (2.3.0-2).
+postgresql-10-orafce is already the newest version (3.6.1-1).
+postgresql-10-partman is already the newest version (3.1.2-1).
+postgresql-10-pgaudit is already the newest version (1.2.0-1).
+postgresql-10-pglogical is already the newest version (2.1.1-1).
+postgresql-10-pgmemcache is already the newest version (2.3.0-4).
+postgresql-10-pgmp is already the newest version (1.0.2-5).
+postgresql-10-pgq-node is already the newest version (3.2.5-1).
+postgresql-10-pgq3 is already the newest version (3.2.6-7).
+postgresql-10-pgrouting is already the newest version (2.5.2-1build1).
+postgresql-10-pgrouting-doc is already the newest version (2.5.2-1build1).
+postgresql-10-pgrouting-scripts is already the newest version (2.5.2-1build1).
+postgresql-10-pgtap is already the newest version (0.97.0-3ubuntu1).
+postgresql-10-pldebugger is already the newest version (1:1.0-3-g71ac998-1).
+postgresql-10-plproxy is already the newest version (2.8-1).
+postgresql-10-plsh is already the newest version (1.20171014-1).
+postgresql-10-plv8 is already the newest version (1:1.4.10.ds-2).
+postgresql-10-postgis-2.4 is already the newest version (2.4.3+dfsg-4).
+postgresql-10-postgis-2.4-scripts is already the newest version (2.4.3+dfsg-4).
+postgresql-10-postgis-scripts is already the newest version (2.4.3+dfsg-4).
+postgresql-10-powa is already the newest version (3.1.1).
+postgresql-10-prefix is already the newest version (1.2.7-1).
+postgresql-10-preprepare is already the newest version (0.9-1).
+postgresql-10-prioritize is already the newest version (1.0.4-3).
+postgresql-10-repack is already the newest version (1.4.2-2).
+postgresql-10-repmgr is already the newest version (4.0.3-1).
+postgresql-10-similarity is already the newest version (1.0~20160916-1).
+postgresql-10-unit is already the newest version (5.0-1).
+postgresql-autodoc is already the newest version (1.40-3).
+postgresql-comparator is already the newest version (2.3.0-2).
+postgresql-filedump is already the newest version (10.0-1build1).
+postgresql-pgsphere is already the newest version (1.1.1+2017.08.30-1build1).
+python-pygresql is already the newest version (1:5.0.4-1).
+python3-aiopg is already the newest version (0.13.2-1).
+python3-pygresql is already the newest version (1:5.0.4-1).
+python3-pyodbc is already the newest version (4.0.17-1).
+python3-pyodbc-dbg is already the newest version (4.0.17-1).
+rsyslog-pgsql is already the newest version (8.32.0-1ubuntu4).
+ulogd2-pgsql is already the newest version (2.0.5-5).
+unixodbc is already the newest version (2.3.4-1.1ubuntu3).
+libpq5 is already the newest version (10.14-0ubuntu0.18.04.1).
+postfix-pgsql is already the newest version (3.3.0-1ubuntu0.3).
+postgresql is already the newest version (10+190ubuntu0.1).
+postgresql-10 is already the newest version (10.14-0ubuntu0.18.04.1).
+postgresql-client-10 is already the newest version (10.14-0ubuntu0.18.04.1).
+postgresql-client-common is already the newest version (190ubuntu0.1).
+postgresql-common is already the newest version (190ubuntu0.1).
+postgresql-contrib is already the newest version (10+190ubuntu0.1).
+postgresql-doc is already the newest version (10+190ubuntu0.1).
+postgresql-doc-10 is already the newest version (10.14-0ubuntu0.18.04.1).
+postgresql-plperl-10 is already the newest version (10.14-0ubuntu0.18.04.1).
+postgresql-plpython-10 is already the newest version (10.14-0ubuntu0.18.04.1).
+postgresql-plpython3-10 is already the newest version (10.14-0ubuntu0.18.04.1).
+postgresql-pltcl-10 is already the newest version (10.14-0ubuntu0.18.04.1).
+libgda-5.0-postgres is already the newest version (5.2.4-9ubuntu0.1).
+libreoffice-sdbc-postgresql is already the newest version (1:6.0.7-0ubuntu0.18.04.10).
+postgresql-all is already the newest version (10+190ubuntu0.1).
+postgresql-server-dev-10 is already the newest version (10.14-0ubuntu0.18.04.1).
+postgresql-server-dev-all is already the newest version (190ubuntu0.1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-04-postgresql.bash [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K5-mysql.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+default-libmysqlclient-dev is already the newest version (1.0.4).
+default-libmysqld-dev is already the newest version (1.0.4).
+libdbd-mysql is already the newest version (0.9.0-5ubuntu2).
+odbcinst is already the newest version (2.3.4-1.1ubuntu3).
+php-mysql is already the newest version (1:7.2+60ubuntu1).
+php-odbc is already the newest version (1:7.2+60ubuntu1).
+unixodbc-dev is already the newest version (2.3.4-1.1ubuntu3).
+default-mysql-client is already the newest version (1.0.4).
+default-mysql-client-core is already the newest version (1.0.4).
+default-mysql-server is already the newest version (1.0.4).
+default-mysql-server-core is already the newest version (1.0.4).
+golang-github-go-sql-driver-mysql-dev is already the newest version (1.3-1).
+libkdb3-driver-mysql is already the newest version (3.1.0-2).
+libmysql++-dev is already the newest version (3.2.2+pristine-2ubuntu3).
+libmysql++-doc is already the newest version (3.2.2+pristine-2ubuntu3).
+libmysql++3v5 is already the newest version (3.2.2+pristine-2ubuntu3).
+libmysql-cil-dev is already the newest version (6.4.3-4).
+libmysql6.4-cil is already the newest version (6.4.3-4).
+libmysqlcppconn-dev is already the newest version (1.1.9-1).
+libmysqlcppconn7v5 is already the newest version (1.1.9-1).
+mysql-utilities is already the newest version (1.6.4-1).
+mysql-workbench is already the newest version (6.3.8+dfsg-1build3).
+mysql-workbench-data is already the newest version (6.3.8+dfsg-1build3).
+mysqltcl is already the newest version (3.052-2).
+mysqltuner is already the newest version (1.7.2-1).
+node-mysql is already the newest version (2.10.2-1).
+php-mdb2-driver-mysql is already the newest version (1.5.0b4-2).
+phpmyadmin is already the newest version (4:4.6.6-5).
+python3-pyodbc is already the newest version (4.0.17-1).
+python3-pyodbc-dbg is already the newest version (4.0.17-1).
+rsyslog-mysql is already the newest version (8.32.0-1ubuntu4).
+ulogd2-mysql is already the newest version (2.0.5-5).
+unixodbc is already the newest version (2.3.4-1.1ubuntu3).
+php7.2-mysql is already the newest version (7.2.24-0ubuntu0.18.04.6).
+postfix-mysql is already the newest version (3.3.0-1ubuntu0.3).
+libgda-5.0-mysql is already the newest version (5.2.4-9ubuntu0.1).
+mysql-testsuite is already the newest version (5.7.31-0ubuntu0.18.04.1).
+mysql-testsuite-5.7 is already the newest version (5.7.31-0ubuntu0.18.04.1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-05-mysql.bash [K[K[K[K[K[K[K[K[K[K[K[K[K6-virtuoso.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+libvirtodbc0 is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-opensource is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-bpel is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-conductor is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-demo is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-doc is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-isparql is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-ods is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-rdfmappers is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-sparqldemo is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-syncml is already the newest version (6.1.6+repack-0ubuntu9).
+virtuoso-vad-tutorial is already the newest version (6.1.6+repack-0ubuntu9).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-06-virtuoso.bash [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K7-gitserver.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Note, selecting 'git' instead of 'git-core'
+git is already the newest version (1:2.17.1-1ubuntu0.7).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+git user already exists
+git repository at /srv/git already exists
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-07-gitserver.bash [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K8-docker.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+debocker is already the newest version (0.2.1).
+docker is already the newest version (1.5-1build1).
+docker-compose is already the newest version (1.17.1-2).
+docker-containerd is already the newest version (0.2.3+git+docker1.13.1~ds1-1).
+docker-registry is already the newest version (2.6.2~ds1-1).
+docker-runc is already the newest version (1.0.0~rc2+git+docker1.13.1~ds1-3).
+docker2aci is already the newest version (0.14.0+dfsg-2).
+docker-doc is already the newest version (19.03.6-0ubuntu1~18.04.1).
+docker.io is already the newest version (19.03.6-0ubuntu1~18.04.1).
+vim-syntax-docker is already the newest version (19.03.6-0ubuntu1~18.04.1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-08-docker.bash [K[K[K[K[K[K[K[K[K[K[K[K[K[K9-mqtt.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+node-mqtt-packet is already the newest version (5.4.0-2).
+mosquitto is already the newest version (1.4.15-2ubuntu0.18.04.3).
+mosquitto-clients is already the newest version (1.4.15-2ubuntu0.18.04.3).
+mosquitto-dev is already the newest version (1.4.15-2ubuntu0.18.04.3).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-09-mqtt.bash [K[K[K[K[K[K[K[K[K[K[K[K[K10-python3.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+python-paho-mqtt is already the newest version (1.3.1-1).
+python3-hbmqtt is already the newest version (0.9-1).
+python3-paho-mqtt is already the newest version (1.3.1-1).
+python3 is already the newest version (3.6.7-1~18.04).
+python3-venv is already the newest version (3.6.7-1~18.04).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-10-python3.bash [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K1-graphene.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+gir1.2-graphene-1.0 is already the newest version (1.8.0-1).
+libgraphene-1.0-0 is already the newest version (1.8.0-1).
+libgraphene-1.0-dev is already the newest version (1.8.0-1).
+libgraphene-doc is already the newest version (1.8.0-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-11-graphene.bash [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K2-openldap.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Note, selecting 'libldap-2.4-2' for regex 'libldap-2.4.2'
+ldap-utils is already the newest version (2.4.45+dfsg-1ubuntu1.6).
+libldap-2.4-2 is already the newest version (2.4.45+dfsg-1ubuntu1.6).
+libldap-common is already the newest version (2.4.45+dfsg-1ubuntu1.6).
+libldap2-dev is already the newest version (2.4.45+dfsg-1ubuntu1.6).
+slapd is already the newest version (2.4.45+dfsg-1ubuntu1.6).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-12-openldap.bash [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K3-apache.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+apache2 is already the newest version (2.4.29-1ubuntu4.14).
+apache2-dev is already the newest version (2.4.29-1ubuntu4.14).
+apache2-doc is already the newest version (2.4.29-1ubuntu4.14).
+apache2-suexec-custom is already the newest version (2.4.29-1ubuntu4.14).
+apache2-suexec-pristine is already the newest version (2.4.29-1ubuntu4.14).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-13-apache.bash [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+Install-Ubuntu-18_04-lts-amd64-00-bind9.bash*	    Install-Ubuntu-18_04-lts-amd64-06-virtuoso.bash*   Install-Ubuntu-18_04-lts-amd64-12-openldap.bash*
+Install-Ubuntu-18_04-lts-amd64-01-base.bash*	    Install-Ubuntu-18_04-lts-amd64-07-gitserver.bash*  Install-Ubuntu-18_04-lts-amd64-13-apache.bash*
+Install-Ubuntu-18_04-lts-amd64-02-gui.bash*	    Install-Ubuntu-18_04-lts-amd64-08-docker.bash*     Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash*
+Install-Ubuntu-18_04-lts-amd64-03-java.bash*	    Install-Ubuntu-18_04-lts-amd64-09-mqtt.bash*       marktemp
+Install-Ubuntu-18_04-lts-amd64-04-postgresql.bash*  Install-Ubuntu-18_04-lts-amd64-10-python3.bash*    versions.log
+Install-Ubuntu-18_04-lts-amd64-05-mysql.bash*	    Install-Ubuntu-18_04-lts-amd64-11-graphene.bash*
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ cat ./Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash 
+#!/bin/bash
+#	linux-install-scripts
+#
+#	Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#		Licensed under the Apache License, Version 2.0 (the "License");
+#		you may not use this file except in compliance with the License.
+#		You may obtain a copy of the License at
+#
+#		http://www.apache.org/licenses/LICENSE-2.0
+#
+#		Unless required by applicable law or agreed to in writing, software
+#		distributed under the License is distributed on an "AS IS" BASIS,
+#		WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#		See the License for the specific language governing permissions and
+#		limitations under the License.
+#
+sudo apt-get install glewlwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g libcbor0 pkg-config sqlite3-doc
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ j[Ksudo apt-get remove glewlwyd glewlwyd-common 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  fonts-font-awesome fonts-glewlwyd libb64-0d libhoel1.3 libjwt0 libmariadbclient18 liborcania1.1 libulfius2.2 libyder2.0
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  glewlwyd glewlwyd-common
+0 upgraded, 0 newly installed, 2 to remove and 0 not upgraded.
+After this operation, 9,010 kB disk space will be freed.
+Do you want to continue? [Y/n] Y
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 342854 files and directories currently installed.)
+Removing glewlwyd (1.3.1-1) ...
+Removing glewlwyd-common (1.3.1-1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ sudo apt-get remove glewlwyd glewlwyd-common [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K autoremovve[K[Ke
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages will be REMOVED:
+  fonts-font-awesome fonts-glewlwyd libb64-0d libhoel1.3 libjwt0 libmariadbclient18 liborcania1.1 libulfius2.2 libyder2.0
+0 upgraded, 0 newly installed, 9 to remove and 0 not upgraded.
+After this operation, 6,801 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 342806 files and directories currently installed.)
+Removing fonts-glewlwyd (1.3.1-1) ...
+Removing fonts-font-awesome (4.7.0~dfsg-3) ...
+Removing libjwt0 (1.9.0-1build1) ...
+Removing libb64-0d:amd64 (1.2-4) ...
+Removing libhoel1.3 (1.3.1-1) ...
+Removing libmariadbclient18:amd64 (1:10.1.44-0ubuntu0.18.04.1) ...
+Removing libulfius2.2 (2.2.4-1) ...
+Removing libyder2.0 (1.1.1-1) ...
+Removing liborcania1.1 (1.1.1-1) ...
+Processing triggers for fontconfig (2.12.6-0ubuntu2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.2) ...
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ls
+Install-Ubuntu-18_04-lts-amd64-00-bind9.bash*	    Install-Ubuntu-18_04-lts-amd64-06-virtuoso.bash*   Install-Ubuntu-18_04-lts-amd64-12-openldap.bash*
+Install-Ubuntu-18_04-lts-amd64-01-base.bash*	    Install-Ubuntu-18_04-lts-amd64-07-gitserver.bash*  Install-Ubuntu-18_04-lts-amd64-13-apache.bash*
+Install-Ubuntu-18_04-lts-amd64-02-gui.bash*	    Install-Ubuntu-18_04-lts-amd64-08-docker.bash*     Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash*
+Install-Ubuntu-18_04-lts-amd64-03-java.bash*	    Install-Ubuntu-18_04-lts-amd64-09-mqtt.bash*       marktemp
+Install-Ubuntu-18_04-lts-amd64-04-postgresql.bash*  Install-Ubuntu-18_04-lts-amd64-10-python3.bash*    versions.log
+Install-Ubuntu-18_04-lts-amd64-05-mysql.bash*	    Install-Ubuntu-18_04-lts-amd64-11-graphene.bash*
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ rm marktemp 
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ mv Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64- 14-oauth2server.bash [1@-[1@d[1@e[1@p[1@e[1@n[1@d[1@e[1@n[1@c[1@i[1@e[1@s
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ mv Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-114-oauth2server-dependencies.bash [A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ v Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$  Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ Install-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-o[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ nstall-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oa[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ stall-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oau[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ tall-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oaut[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ all-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ll-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ [C-Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2s[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ -Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2se[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ Ubuntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2ser[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ buntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2serv[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ untu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2serve[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ntu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ tu-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ u-18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-d[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ -18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-de[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ 18_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dep[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ 8_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-depe[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ _04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-depen[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ 04-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-depend[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ 4-lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-depende[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ -lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependen[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ lts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependenc[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ts-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependenci[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ s-amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencie[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ -amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ amd64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ md64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.b[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ d64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.ba[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ 64-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bas[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ 4-14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash[1P [A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ -14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash [K[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ 14-oauth2server.bash Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@v[1@i
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;20r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[20;1H"Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash" 18L, 860C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m#!/bin/bash
+#   linux-install-scripts
+#
+#   Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#       Licensed under the Apache License, Version 2.0 (the "License");
+#       you may not use this file except in compliance with the License.
+#       You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#       Unless required by applicable law or agreed to in writing, software
+#       distributed under the License is distributed on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#       See the License for the specific language governing permissions and
+#       limitations under the License.
+#[m
+sudo apt-get install glewlwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default--[19;1Hmysql-client zlib1g libcbor0 pkg-config sqlite3-doc[20;143H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[96m#!/bin/bash
+#   linux-install-scripts
+#
+#   Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#       Licensed under the Apache License, Version 2.0 (the "License");
+#       you may not use this file except in compliance with the License.
+#       You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#       Unless required by applicable law or agreed to in writing, software
+#       distributed under the License is distributed on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#       See the License for the specific language governing permissions and
+#       limitations under the License.
+#[m
+sudo apt-get install glewlwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default--[19;1Hmysql-client zlib1g libcbor0 pkg-config sqlite3-doc[20;143H1,1[11CAll"Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash" 18L, 860C[1;1H[?25h[?25l[20;143H2[2;1H[?25h[?25l[20;143H3[3;1H[?25h[?25l[20;143H4[4;1H[?25h[?25l[20;143H5[5;1H[?25h[?25l[20;143H6[6;1H[?25h[?25l[20;143H7[7;1H[?25h[?25l[20;143H8[8;1H[?25h[?25l[20;143H9[9;1H[?25h[?25l[20;143H10,1[10;1H[?25h[?25l[20;144H1[11;1H[?25h[?25l[20;144H2[12;1H[?25h[?25l[20;144H3[13;1H[?25h[?25l[20;144H4[14;1H[?25h[?25l[20;144H5[15;1H[?25h[?25l[20;144H6[16;1H[?25h[?25l[20;144H7[17;1H[?25h[?25l[20;144H8[18;1H[?25h[?25l[20;1H[K[20;1H:[?2004h[?25h.[?25l[?25hc[?25l[?25ho[?25l[?25h.[?25l[?25h[?25l[1;19r[1;1H[2M[1;20r[18;1Hsudo apt-get install glewlwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default--[19;1Hmysql-client zlib1g libcbor0 pkg-config sqlite3-doc[20;1H[K[20;143H19,1[10CBot[18;1H[?25h[?25l[20;146H2[18;2H[?25h[?25l[20;146H3[18;3H[?25h[?25l[20;146H4[18;4H[?25h[?25l[20;146H5[18;5H[?25h[?25l[20;146H6[18;6H[?25h[?25l[20;146H7[18;7H[?25h[?25l[20;146H8[18;8H[?25h[?25l[20;146H9[18;9H[?25h[?25l[20;146H10[18;10H[?25h[?25l[20;147H1[18;11H[?25h[?25l[20;147H2[18;12H[?25h[?25l[20;147H3[18;13H[?25h[?25l[20;147H4[18;14H[?25h[?25l[20;147H5[18;15H[?25h[?25l[20;147H6[18;16H[?25h[?25l[20;147H7[18;17H[?25h[?25l[20;147H8[18;18H[?25h[?25l[20;147H9[18;19H[?25h[?25l[20;146H20[18;20H[?25h[?25l[20;147H1[18;21H[?25h[?25l[20;147H2[18;22H[?25h[?25l[20;147H3[18;23H[?25h[?25l[20;147H4[18;24H[?25h[?25l[20;147H5[18;25H[?25h[?25l[20;147H6[18;26H[?25h[?25l[20;147H7[18;27H[?25h[?25l[20;147H8[18;28H[?25h[?25l[20;147H9[18;29H[?25h[?25l[20;146H30[18;30H[?25h[?25l[20;147H1[18;31H[?25h[?25l[20;147H2[18;32H[?25h[?25l[20;147H3[18;33H[?25h[?25l[20;147H4[18;34H[?25h[?25l[20;147H5[18;35H[?25h[?25l[20;147H6[18;36H[?25h[?25l[20;147H7[18;37H[?25h[?25l[20;147H8[18;38H[?25h[?25l[20;147H9[18;39H[?25h[?25l[20;146H40[18;40H[?25h[?25l[20;147H1[18;41H[?25h[?25l[20;147H2[18;42H[?25h[?25l[20;147H3[18;43H[?25h[?25l[20;147H4[18;44H[?25h[?25l[20;147H5[18;45H[?25h[?25l[20;147H6[18;46H[?25h[?25l[20;147H7[18;47H[?25h[?25l[20;147H6[18;46H[?25h[?25l[18;47H[K[19;1H[94m~                                                                                                                                                               [m[20;147H5[18;45H[?25h[?25l[20;144H8[16;45H[?25h[?25l[20;146H1 [16;1H[?25h[?25l[20;146H2[16;2H[?25h[?25l[20;146H3[16;3H[?25h[?25l[20;146H4[16;4H[?25h[?25l[20;146H5[16;5H[?25h[?25l[20;146H6[16;6H[?25h[?25l[20;146H7[16;7H[?25h[?25l[20;146H8[16;8H[?25h[?25l[20;146H9[16;9H[?25h[?25l[20;146H10[16;10H[?25h[?25l[20;147H1[16;11H[?25h[?25l[20;147H2[16;12H[?25h[?25l[20;147H3[16;13H[?25h[?25l[20;147H4[16;14H[?25h[?25l[20;147H5[16;15H[?25h[?25l[20;147H6[16;16H[?25h[?25l[20;147H7[16;17H[?25h[?25l[20;147H8[16;18H[?25h[?25l[20;147H9[16;19H[?25h[?25l[20;146H20[16;20H[?25h[?25l[20;147H1[16;21H[?25h[?25l[20;147H2[16;22H[?25h[?25l[20;147H3[16;23H[?25h[?25l[20;147H2[16;22H[?25h[?25llewlwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mm[17;1Hysql-client zlib1g libcbor0 pkg-config sqlite3-doc[17;51H[K[16;22H[?25h[?25lewlwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-myy[17;1Hsql-client zlib1g libcbor0 pkg-config sqlite3-doc[17;50H[K[16;22H[?25h[?25lwlwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-myss[17;1Hql-client zlib1g libcbor0 pkg-config sqlite3-doc[17;49H[K[16;22H[?25h[?25llwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysqq[17;1Hl-client zlib1g libcbor0 pkg-config sqlite3-doc[17;48H[K[16;22H[?25h[?25lwyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysqll[17;1H-client zlib1g libcbor0 pkg-config sqlite3-doc[17;47H[K[16;22H[?25h[?25lyd glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql--[17;1Hclient zlib1g libcbor0 pkg-config sqlite3-doc[17;46H[K[16;22H[?25h[?25ld glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-cc[17;1Hlient zlib1g libcbor0 pkg-config sqlite3-doc[17;45H[K[16;22H[?25h[?25l glewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-cll[17;1Hient zlib1g libcbor0 pkg-config sqlite3-doc[17;44H[K[16;22H[?25h[?25lglewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-clii[17;1Hent zlib1g libcbor0 pkg-config sqlite3-doc[17;43H[K[16;22H[?25h[?25llewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-cliee[17;1Hnt zlib1g libcbor0 pkg-config sqlite3-doc[17;42H[K[16;22H[?25h[?25lewlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-clienn[17;1Ht zlib1g libcbor0 pkg-config sqlite3-doc[17;41H[K[16;22H[?25h[?25lwlwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-clientt[17;1H zlib1g libcbor0 pkg-config sqlite3-doc[17;40H[K[16;22H[?25h[?25llwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client  [17;1Hzlib1g libcbor0 pkg-config sqlite3-doc[17;39H[K[16;22H[?25h[?25lwyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zz[17;1Hlib1g libcbor0 pkg-config sqlite3-doc[17;38H[K[16;22H[?25h[?25lyd-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zll[17;1Hib1g libcbor0 pkg-config sqlite3-doc[17;37H[K[16;22H[?25h[?25ld-common sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlii[17;1Hb1g libcbor0 pkg-config sqlite3-doc[17;36H[K[16;22H[?25h[?25l[38;5;224m-common[m sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlibb[17;1H1g libcbor0 pkg-config sqlite3-doc[17;35H[K[16;22H[?25h[?25lcommon sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib11[17;1Hg libcbor0 pkg-config sqlite3-doc[17;34H[K[16;22H[?25h[?25lommon sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1gg[17;1H libcbor0 pkg-config sqlite3-doc[17;33H[K[16;22H[?25h[?25lmmon sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g  [17;1Hlibcbor0 pkg-config sqlite3-doc[17;32H[K[16;22H[?25h[?25lmon sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g ll[17;1Hibcbor0 pkg-config sqlite3-doc[17;31H[K[16;22H[?25h[?25lon sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g lii[17;1Hbcbor0 pkg-config sqlite3-doc[17;30H[K[16;22H[?25h[?25ln sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g libb[17;1Hcbor0 pkg-config sqlite3-doc[17;29H[K[16;22H[?25h[?25l sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g libcc[17;1Hbor0 pkg-config sqlite3-doc[17;28H[K[16;22H[?25h[?25lsqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g libcbb[17;1Hor0 pkg-config sqlite3-doc[17;27H[K[16;22H[?25h[?25l[20;144H9[18;22H[?25h[?25l[20;144H8[16;22H[?25h[?25l[20;146H186[17;26H[?25h[?25l
+
+
+[1m-- INSERT --[m[20;143H[K[20;143H18,187[8CBot[17;27H[?25h[?25l[18;1H[K[19;1Hsudo apt-get install glewlwyd glewlwyd-common[19;46H[K[20;144H9,1  [18;1H[?25h[?25l[96m#[m[20;146H2[18;2H[?25h[?25l[19;1H[K[20;143H20,1[10C66%[19;1H[?25h[?25l[96m#[m[20;146H2[19;2H[?25h[?25l[96m   [m[20;146H3-5[19;5H[?25h[?25l[96mD[m[20;146H4-6[19;6H[?25h[?25l[96mo[m[20;146H5-7[19;7H[?25h[?25l[96m [m[20;146H6-8[19;8H[?25h[?25l[96ms[m[20;146H7-9[19;9H[?25h[?25l[96mo[m[20;146H8-10[19;10H[?25h[?25l[96mu[m[20;146H9-11[19;11H[?25h[?25l[96mr[m[20;146H10-12[19;12H[?25h[?25l[96mc[m[20;147H1-13[19;13H[?25h[?25l[96me[m[20;147H2-14[19;14H[?25h[?25l[96m [m[20;147H3-15[19;15H[?25h[?25l[96mb[m[20;147H4-16[19;16H[?25h[?25l[96mu[m[20;147H5-17[19;17H[?25h[?25l[96mi[m[20;147H6-18[19;18H[?25h[?25l[96ml[m[20;147H7-19[19;19H[?25h[?25l[96md[m[20;147H8-20[19;20H[?25h[?25l[96ms[m[20;147H9-21[19;21H[?25h[?25l[96m [m[20;146H20-22[19;22H[?25h[?25l[96mi[m[20;147H1-23[19;23H[?25h[?25l[96mn[m[20;147H2-24[19;24H[?25h[?25l[96ms[m[20;147H3-25[19;25H[?25h[?25l[96mt[m[20;147H4-26[19;26H[?25h[?25l[96me[m[20;147H5-27[19;27H[?25h[?25l[96ma[m[20;147H6-28[19;28H[?25h[?25l[96md[m[20;147H7-29[19;29H[?25h[?25l[96m [m[20;147H8-30[19;30H[?25h[?25l[96mo[m[20;147H9-31[19;31H[?25h[?25l[96mf[m[20;146H30-32[19;32H[?25h[?25l[96m [m[20;147H1-33[19;33H[?25h[?25l[96mi[m[20;147H2-34[19;34H[?25h[?25l[96mn[m[20;147H3-35[19;35H[?25h[?25l[96ms[m[20;147H4-36[19;36H[?25h[?25l[96mt[m[20;147H5-37[19;37H[?25h[?25l[96ma[m[20;147H6-38[19;38H[?25h[?25l[96ml[m[20;147H7-39[19;39H[?25h[?25l[96ml[m[20;147H8-40[19;40H[?25h[?25l[96mi[m[20;147H9-41[19;41H[?25h[?25l[96mn[m[20;146H40-42[19;42H[?25h[?25l[96mg[m[20;147H1-43[19;43H[?25h[?25l[96m [m[20;147H2-44[19;44H[?25h[?25l[96mt[m[20;147H3-45[19;45H[?25h[?25l[96mh[m[20;147H4-46[19;46H[?25h[?25l[96me[m[20;147H5-47[19;47H[?25h[?25l[96m [m[20;147H6-48[19;48H[?25h[?25l[96mo[m[20;147H7-49[19;49H[?25h[?25l[96mu[m[20;147H8-50[19;50H[?25h[?25l[96mt[m[20;147H9-51[19;51H[?25h[?25l[96md[m[20;146H50-52[19;52H[?25h[?25l[96ma[m[20;147H1-53[19;53H[?25h[?25l[96mt[m[20;147H2-54[19;54H[?25h[?25l[96me[m[20;147H3-55[19;55H[?25h[?25l[96md[m[20;147H4-56[19;56H[?25h[?25l[96m [m[20;147H5-57[19;57H[?25h[?25l[96m1[m[20;147H6-58[19;58H[?25h[?25l[96m8[m[20;147H7-59[19;59H[?25h[?25l[96m.[m[20;147H8-60[19;60H[?25h[?25l[96m0[m[20;147H9-61[19;61H[?25h[?25l[96m4[m[20;146H60-62[19;62H[?25h[?25l[96m [m[20;147H1-63[19;63H[?25h[?25l[96mp[m[20;147H2-64[19;64H[?25h[?25l[96ma[m[20;147H3-65[19;65H[?25h[?25l[96mc[m[20;147H4-66[19;66H[?25h[?25l[96mk[m[20;147H5-67[19;67H[?25h[?25l[96ma[m[20;147H6-68[19;68H[?25h[?25l[96mg[m[20;147H7-69[19;69H[?25h[?25l[96me[m[20;147H8-70[19;70H[?25h[?25l[96ms[m[20;147H9-71[19;71H[?25h[?25l[1;19r[19;1H
+[1;20r[20;143H[K[20;143H21,1[10C75%[19;1H[?25h[?25l[96m#[m[20;146H2[19;2H[?25h[20;1H[K[19;1H[?25l[20;143H21,1[10C75%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1Hsudo apt-get install glewlwyd glewlwyd-common[20;143H[K[20;143H22,1[10CBot[19;1H[?25h[?25l
+[1m-- INSERT --[m[20;143H[K[20;143H22,1[10CBot[19;1H[?25h[?25l[96m#sudo apt-get install glewlwyd glewlwyd-common[m[20;146H2[19;2H[?25h[20;1H[K[19;1H[?25l[20;143H22,1[10CBot[19;1H[?25h[?25l[20;143H[K[20;1H:[?2004h[?25hw[?25l[?25h[?25l"Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash" 22L, 955C written[58C22,1[10CBot[20;143H[K[20;143H22,1[10CBot[19;1H[?25h[?25l[20;1H[K[20;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash" 22L, 955C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ ./Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+libjansson4 is already the newest version (2.11-1).
+pkg-config is already the newest version (0.29.1-0ubuntu2).
+zlib1g is already the newest version (1:1.2.11.dfsg-0ubuntu2).
+default-mysql-client is already the newest version (1.0.4).
+libcbor0 is already the newest version (0.5.0+dfsg-1).
+libconfig9 is already the newest version (1.5-0.4).
+libmicrohttpd12 is already the newest version (0.9.59-1).
+liboath0 is already the newest version (2.6.1-1).
+libcurl3-gnutls is already the newest version (7.58.0-2ubuntu3.10).
+libldap-2.4-2 is already the newest version (2.4.45+dfsg-1ubuntu1.6).
+libpq5 is already the newest version (10.14-0ubuntu0.18.04.1).
+libsqlite3-0 is already the newest version (3.22.0-1ubuntu0.4).
+sqlite3 is already the newest version (3.22.0-1ubuntu0.4).
+sqlite3-doc is already the newest version (3.22.0-1ubuntu0.4).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-18_04-lts-amd64$ cd ../ut[Kbuntu-20_04-lts-amd64/
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ vi Install-Ubuntu-20_04-lts-amd64-14-oauth2server.bash [1P[1P[1@m[1@v[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C [KInstall-Ubuntu-20_04-lts-amd64- 14-oauth2server.bash [1@-[1@d[1@e[1@p[1@e[1@n[1@d[1@e[1@n[1@c[1@i[1@e[1@s
+]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ mv Install-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-114-oauth2server-dependencies.bash [A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ v Install-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$  Install-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ Install-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-o[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ nstall-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oa[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ stall-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oau[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ tall-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oaut[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ all-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ ll-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ [C-Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2s[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ -Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2se[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ Ubuntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2ser[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ buntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2serv[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ untu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2serve[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ ntu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ tu-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ u-20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-d[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ -20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-de[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ 20_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dep[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ 0_04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-depe[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ _04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-depen[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ 04-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-depend[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ 4-lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-depende[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ -lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependen[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ lts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependenc[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ ts-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependenci[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ s-amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencie[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ -amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ amd64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ md64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.b[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ d64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.ba[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ 64-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bas[1P[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ 4-14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bash[1P [A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ -14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bash [K[A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ 14-oauth2server.bash Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bash  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@v[1@i[1@ [1@I[C[1@n[1P
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;20r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[20;1H"Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bash" 19L, 838C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m#!/bin/bash
+#   linux-install-scripts
+#
+#   Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#       Licensed under the Apache License, Version 2.0 (the "License");
+#       you may not use this file except in compliance with the License.
+#       You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#       Unless required by applicable law or agreed to in writing, software
+#       distributed under the License is distributed on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#       See the License for the specific language governing permissions and
+#       limitations under the License.
+#
+#sudo apt-get install glewlwyd glewlwyd-common[m
+[38;5;130mecho[m[31m [m[38;5;130m"[m[31mSorry, but glewlwyd installations for 20.04.1 are broken as of 2020-09-11 and I haven't checked to see if it is fixed yet - Mark Sobkow[m[38;5;130m"[m[20;143H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[96m#!/bin/bash
+#   linux-install-scripts
+#
+#   Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#       Licensed under the Apache License, Version 2.0 (the "License");
+#       you may not use this file except in compliance with the License.
+#       You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#       Unless required by applicable law or agreed to in writing, software
+#       distributed under the License is distributed on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#       See the License for the specific language governing permissions and
+#       limitations under the License.
+#
+#sudo apt-get install glewlwyd glewlwyd-common[m
+[93mecho[m[95m [m[93m"[m[95mSorry, but glewlwyd installations for 20.04.1 are broken as of 2020-09-11 and I haven't checked to see if it is fixed yet - Mark Sobkow[m[93m"[m[20;143H1,1[11CAll"Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bash" 19L, 838C[1;1H[?25h[?25l[20;143H2[2;1H[?25h[?25l[20;143H3[3;1H[?25h[?25l[20;143H4[4;1H[?25h[?25l[20;143H5[5;1H[?25h[?25l[20;143H6[6;1H[?25h[?25l[20;143H7[7;1H[?25h[?25l[20;143H8[8;1H[?25h[?25l[20;143H9[9;1H[?25h[?25l[20;143H10,1[10;1H[?25h[?25l[20;144H1[11;1H[?25h[?25l[20;144H2[12;1H[?25h[?25l[20;144H3[13;1H[?25h[?25l[20;144H4[14;1H[?25h[?25l[20;144H5[15;1H[?25h[?25l[20;144H6[16;1H[?25h[?25l[20;144H7[17;1H[?25h[?25l[20;144H8[18;1H[?25h[?25l[20;144H9[19;1H[?25h[?25l[20;1H[K[20;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[20;1H[K[20;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ vi ../ubuntu-18_04-lts-amd64/Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependenciees.bash 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;20r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[20;1H"../ubuntu-18_04-lts-amd64/Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash" 22L, 955C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m#!/bin/bash
+#   linux-install-scripts
+#
+#   Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#       Licensed under the Apache License, Version 2.0 (the "License");
+#       you may not use this file except in compliance with the License.
+#       You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#       Unless required by applicable law or agreed to in writing, software
+#       distributed under the License is distributed on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#       See the License for the specific language governing permissions and
+#       limitations under the License.
+#[m
+sudo apt-get install sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g libcbb[19;1Hor0 pkg-config sqlite3-doc[20;143H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[96m#!/bin/bash
+#   linux-install-scripts
+#
+#   Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#       Licensed under the Apache License, Version 2.0 (the "License");
+#       you may not use this file except in compliance with the License.
+#       You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#       Unless required by applicable law or agreed to in writing, software
+#       distributed under the License is distributed on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#       See the License for the specific language governing permissions and
+#       limitations under the License.
+#[m
+sudo apt-get install sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g libcbb[19;1Hor0 pkg-config sqlite3-doc[20;143H1,1[11CTop"../ubuntu-18_04-lts-amd64/Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependencies.bash" 22L, 955C[1;1H[?25h[?25l[20;143H2[2;1H[?25h[?25l[20;143H3[3;1H[?25h[?25l[20;143H4[4;1H[?25h[?25l[20;143H5[5;1H[?25h[?25l[20;143H6[6;1H[?25h[?25l[20;143H7[7;1H[?25h[?25l[20;143H8[8;1H[?25h[?25l[20;143H9[9;1H[?25h[?25l[20;143H10,1[10;1H[?25h[?25l[20;144H1[11;1H[?25h[?25l[20;144H2[12;1H[?25h[?25l[20;144H3[13;1H[?25h[?25l[20;144H4[14;1H[?25h[?25l[20;144H5[15;1H[?25h[?25l[20;144H6[16;1H[?25h[?25l[20;144H7[17;1H[?25h[?25l[20;144H8[18;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#[m[20;1H[K[20;143H19,1[10C25%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#   Do source builds instead of installing the outdated 18.04 packages[m[20;143H[K[20;143H20,1[10C50%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#[m[20;143H[K[20;143H21,1[10C75%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#sudo apt-get install glewlwyd glewlwyd-common[m[20;143H[K[20;143H22,1[10CBot[19;1H[?25h[?25l[20;144H1[18;1H[?25h[?25l[20;144H0[17;1H[?25h[?25l[20;143H19[16;1H[?25h[?25l[20;144H8[14;1H[?25h[?25l[20;144H9[16;1H[?25h[?25l[20;143H20[17;1H[?25h[?25l[20;144H1[18;1H[?25h[?25l[20;144H2[19;1H[?25h[?25l[20;143H[K[20;1H:[?2004h'a,.w! /home/msobkow/.marktemp"~/.marktemp" [20;15H[K[20;15H[New] 5L, 307C written[106C22,1[10CBot[20;143H[K[20;143H22,1[10CBot[19;1H[?25h[?25l[20;1H[K[20;1H:[?2004h[?25hn[?25l[?25h[?25l[97m[41mE163: There is only one file to edit[m[106C22,1[10CBot[19;1H[?25h[?25l[20;1H[K[20;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[20;1H[K[20;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ vi ../ubuntu-18_04-lts-amd64/Install-Ubuntu-18_04-lts-amd64-14-oauth2server-dependenciees.bash [A]0;msobkow@devmsscforg: ~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64msobkow@devmsscforg:~/msscf/linux-install-scripts/ubuntu-20_04-lts-amd64$ [C[C[C[18PInstall-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bash 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;20r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[20;1H"Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bash" 19L, 838C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m#!/bin/bash
+#   linux-install-scripts
+#
+#   Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#       Licensed under the Apache License, Version 2.0 (the "License");
+#       you may not use this file except in compliance with the License.
+#       You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#       Unless required by applicable law or agreed to in writing, software
+#       distributed under the License is distributed on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#       See the License for the specific language governing permissions and
+#       limitations under the License.
+#
+#sudo apt-get install glewlwyd glewlwyd-common[m
+[38;5;130mecho[m[31m [m[38;5;130m"[m[31mSorry, but glewlwyd installations for 20.04.1 are broken as of 2020-09-11 and I haven't checked to see if it is fixed yet - Mark Sobkow[m[38;5;130m"[m[20;143H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[96m#!/bin/bash
+#   linux-install-scripts
+#
+#   Copyright 2020 Mark Stephen Sobkow msobkow@sasktel.net
+#
+#       Licensed under the Apache License, Version 2.0 (the "License");
+#       you may not use this file except in compliance with the License.
+#       You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#       Unless required by applicable law or agreed to in writing, software
+#       distributed under the License is distributed on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#       See the License for the specific language governing permissions and
+#       limitations under the License.
+#
+#sudo apt-get install glewlwyd glewlwyd-common[m
+[93mecho[m[95m [m[93m"[m[95mSorry, but glewlwyd installations for 20.04.1 are broken as of 2020-09-11 and I haven't checked to see if it is fixed yet - Mark Sobkow[m[93m"[m[20;143H1,1[11CAll"Install-Ubuntu-20_04-lts-amd64-14-oauth2server-dependencies.bash" 19L, 838C[1;1H[?25h[?25l[20;143H2[2;1H[?25h[?25l[20;143H3[3;1H[?25h[?25l[20;143H4[4;1H[?25h[?25l[20;143H5[5;1H[?25h[?25l[20;143H6[6;1H[?25h[?25l[20;143H7[7;1H[?25h[?25l[20;143H8[8;1H[?25h[?25l[20;143H9[9;1H[?25h[?25l[20;143H10,1[10;1H[?25h[?25l[20;144H1[11;1H[?25h[?25l[20;144H2[12;1H[?25h[?25l[20;144H3[13;1H[?25h[?25l[20;144H4[14;1H[?25h[?25l[20;144H5[15;1H[?25h[?25l[20;144H6[16;1H[?25h[?25l[20;144H7[17;1H[?25h[?25l[20;1H[K[20;1H:[?2004h.r /home/msobkow/.marktemp"~/.marktemp" [20;15H[K[20;15H5L, 307C[18;1Hsudo apt-get install sqlite3 liboath0 libconfig9 libjansson4 libcurl3-gnutls libldap-2.4-2 libmicrohttpd12 libsqlite3-0 libpq5 default-mysql-client zlib1g libcbb[19;1Hor0 pkg-config sqlite3-doc[19;27H[K[20;143H18,1[10CTop[18;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#[m[20;1H[K[20;143H19,1[10C16%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#   Do source builds instead of installing the outdated 18.04 packages[m[20;143H[K[20;143H20,1[10C33%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#[m[20;143H[K[20;143H21,1[10C50%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#sudo apt-get install glewlwyd glewlwyd-common[m[20;143H[K[20;143H22,1[10C66%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[96m#sudo apt-get install glewlwyd glewlwyd-common[m[20;143H[K[20;143H23,1[10C83%[19;1H[?25h[?25l[1;19r[19;1H
+[1;20r[19;1H[93mecho[m[95m [m[93m"[m[95mSorry, but glewlwyd installations for 20.04.1 are broken as of 2020-09-11 and I haven't checked to see if it is fixed yet - Mark Sobkow[m[93m"[m[20;143H[K[20;143H24,1[10CBot[19;1H[?25h[?25l[20;144H3[18;1H[?25h[?25l[20;144H2[17;1H[?25h[?25l[20;144H1[16;1H[?25h[?25l[20;144H0[15;1H[?25h[?25l[20;146H68-70[15;70H[?25h[?25l[20;147H7-69[15;69H[?25h[?25l[20;147H6-68[15;68H[?25h[?25l[20;147H5-67[15;67H[?25h[?25l[20;147H4-66[15;66H[?25h[?25l[20;147H3-65[15;65H[?25h[?25l[20;147H2-64[15;64H[?25h[?25l[20;147H1-63[15;63H[?25h[?25l[20;147H0-62[15;62H[?25h[?25l[20;146H59-61[15;61H[?25h[?25l[20;147H8-60[15;60H[?25h[?25l[20;147H7-59[15;59H[?25h[?25l[20;147H6-58[15;58H[?25h[?25l[20;147H5-57[15;57H[?25h[?25l[20;147H4-56[15;56H[?25h[?25l[20;147H3-55[15;55H[?25h[?25l[20;147H2-54[15;54H[?25h[?25l[20;147H1-53[15;53H[?25h[?25l[20;147H0-52[15;52H[?25h[?25l[20;146H49-51[15;51H[?25h[?25l[20;147H8-50[15;50H[?25h[?25l[20;147H7-49[15;49H[?25h[?25l[20;147H6-48[15;48H[?25h[?25l[96m18.04 packages[m[15;62H[K[15;48H[?25h[?25l[96m.04 packages[m[15;60H[K[15;48H[?25h[?25l[96m04 packages[m[15;59H[K[15;48H[?25h[?25l[96mpackages[m[15;56H[K[15;48H[?25h[?25l[20;1H[1m-- INSERT --[m[20;143H[K[20;143H20,46-48      Bot[15;48H[?25h[?25l[96mbpackages[m[20;147H7-49[15;49H[?25h[?25l[96mrpackages[m[20;147H8-50[15;50H[?25h[?25l[96mopackages[m[20;147H9-51[15;51H[?25h[?25l
