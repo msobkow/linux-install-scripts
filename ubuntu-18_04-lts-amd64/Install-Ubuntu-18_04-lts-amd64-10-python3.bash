@@ -15,4 +15,4 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install python3 python3-venv python-paho-mqtt python3-hbmqtt python3-paho-mqtt
+sudo apt-get install python3 python3-venv python-paho-mqtt python3-hbmqtt python3-paho-mqtt libnode-dev npm
