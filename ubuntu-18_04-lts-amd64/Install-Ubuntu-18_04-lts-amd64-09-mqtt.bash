@@ -15,4 +15,4 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install mosquitto mosquitto-clients mosquitto-dev node-mqtt-packet
+sudo apt-get install mosquitto mosquitto-clients mosquitto-dev
