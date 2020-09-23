@@ -15,4 +15,4 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-dpkg-query -l | grep '^ii' > dpkg-`hostname`-ubuntu-18_04-lts-amd64-installed-`date '+%Y%m%d_%Hh%M'`.txt
+dpkg-query -l | grep '^ii' > dpkg-installed-`hostname`-`uname`-`uname -r`-`uname -m`-`date '+%Y%m%d_%Hh%M'`.txt
