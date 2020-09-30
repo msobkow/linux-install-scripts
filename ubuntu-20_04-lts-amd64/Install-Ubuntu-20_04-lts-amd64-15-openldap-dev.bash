@@ -15,5 +15,5 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install ldap-utils libldap-common slapd ldap-account-manager ldap-account-manager-lamdaemon ldap-auth-client ldap-auth-config ldap-git-backup libldap-2.4-2 libldap-common libldap2-dev libldap-java
+sudo apt-get install ldap-utils libldap-common ldap-auth-client ldap-auth-config libldap-2.4-2 libldap2-dev libldap-java
 
