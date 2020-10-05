@@ -15,7 +15,4 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-if [ ! -d $HOME/`hostname` ]; then
-	mkdir $HOME/`hostname`
-fi
-dpkg-query -l | grep '^ii' > $HOME/`hostname`/dpkg-installed-`hostname`-`lsb_release -s -i`-`lsb_release -s -r`-`uname -m`-`date '+%Y%m%d_%Hh%M'`.txt
+sudo apt-get install gnucash libdbd-mysql libdbd-pgsql libdbd-sqlite3 guile-2.2-doc aqbanking-tools gwenhywfar-tools libhtml-element-extended-perl ofx

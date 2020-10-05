@@ -15,7 +15,7 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install git-core
+#sudo apt-get install git-core
 
 HAS_GIT_USER=`grep '^git:' /etc/passwd`
 if [ "$HAS_GIT_USER" == "" ]; then
