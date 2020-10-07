@@ -1,7 +1,5 @@
 #!/bin/bash
 # Stack for host thouse.dev.msscf.org
-./Install-Ubuntu-20_04-lts-amd64-01-base.bash
-./Install-Ubuntu-20_04-lts-amd64-02-gui.bash
 ./Install-Ubuntu-20_04-lts-amd64-03-perl.bash
 ./Install-Ubuntu-20_04-lts-amd64-04-python3.bash
 ./Install-Ubuntu-20_04-lts-amd64-05-java.bash
