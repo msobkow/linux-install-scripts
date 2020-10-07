@@ -20,10 +20,12 @@
 ./Install-Ubuntu-18_04-lts-amd64-03-java.bash
 ./Install-Ubuntu-18_04-lts-amd64-04-postgresql.bash
 ./Install-Ubuntu-18_04-lts-amd64-05-mysql.bash
-./Install-Ubuntu-18_04-lts-amd64-06-virtuoso.bash
+#./Install-Ubuntu-18_04-lts-amd64-06-virtuoso.bash
+./purge-virtuoso.bash
 ./Install-Ubuntu-18_04-lts-amd64-07-gitserver.bash
-./Install-Ubuntu-18_04-lts-amd64-08-docker.bash
-./Install-Ubuntu-18_04-lts-amd64-09-mqtt.bash
+#./Install-Ubuntu-18_04-lts-amd64-08-docker.bash
+#./Install-Ubuntu-18_04-lts-amd64-09-mqtt.bash
+./purge-mqtt.bash
 ./Install-Ubuntu-18_04-lts-amd64-10-python3.bash
 ./Install-Ubuntu-18_04-lts-amd64-11-graphene.bash
 ./Install-Ubuntu-18_04-lts-amd64-13-apache.bash
