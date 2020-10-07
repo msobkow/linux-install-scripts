@@ -17,3 +17,5 @@
 ./Install-Ubuntu-20_04-lts-amd64-17-oauth2server-dependencies.bash
 #Install-Ubuntu-20_04-lts-amd64-bind9.bash
 ./Install-Ubuntu-20_04-lts-amd64-openldap-srv.bash
+#./Install-Ubuntu-20_04-lts-amd64-99-gnu-cash.bash
+./Install-Ubuntu-20_04-lts-amd64-99-tigervnc.bash
