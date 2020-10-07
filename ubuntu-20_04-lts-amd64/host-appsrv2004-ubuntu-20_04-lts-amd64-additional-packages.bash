@@ -19,4 +19,3 @@
 ./Install-Ubuntu-20_04-lts-amd64-openldap-srv.bash
 ./Install-Ubuntu-20_04-lts-amd64-99-gnu-cash.bash
 ./Install-Ubuntu-20_04-lts-amd64-99-tigervnc.bash
-
