@@ -1,0 +1,130 @@
+dn: ou=People,dc=dev,dc=msscf,dc=org
+objectClass: organizationalUnit
+ou: People
+
+dn: uid=glewadmin,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: glewadmin
+sn: Admin
+givenName: Glewlwyd
+cn: Glewlwyd Admin
+displayName: Glewlwyd Admin
+userPassword: {CRYPT}x
+scope: g_profile
+scope: g_admin
+
+dn: uid=msobkow,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: msobkow
+sn: Sobkow
+givenName: Mark
+cn: Mark Stephen Sobkow
+displayName: Mark Stepen Sobkow
+userPassword: {CRYPT}x
+scope: g_profile
+scope: g_developer
+
+dn: uid=icameron,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: icameron
+sn: Cameron
+givenName: Ian
+cn: Ian Cameron
+displayName: Ian Cameron
+userPassword: {CRYPT}x
+scope: g_profile
+scope: g_developer
+
+dn: uid=rpomedli,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: rpomedli
+sn: Pomedli
+givenName: Robert
+cn: Robert Pomedli
+displayName: Robert Pomedli
+userPassword: {CRYPT}x
+scope: g_profile
+scope: g_developer
+
+dn: uid=testadm1,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: testadm1
+sn: Admin 1
+givenName: Test
+cn: Test Admin 1
+displayName: Test Admin 1
+userPassword: {CRYPT}x
+scope: g_admin
+scope: g_profile
+
+dn: uid=testuser1,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: testuser1
+sn: User 1
+givenName: Test
+cn: Test User 1
+displayName: Test User 1
+userPassword: {CRYPT}x
+scope: g_profile
+
+dn: uid=testuser2,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: testuser2
+sn: User 2
+givenName: Test
+cn: Test User 2
+displayName: Test User 2
+userPassword: {CRYPT}x
+scope: g_profile
+
+dn: uid=testuser3,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: testuser3
+sn: User 3
+givenName: Test
+cn: Test User 3
+displayName: Test User 3
+userPassword: {CRYPT}x
+scope: g_profile
+
+dn: uid=testuser4,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: testuser4
+sn: User 4
+givenName: Test
+cn: Test User 4
+displayName: Test User 4
+userPassword: {CRYPT}x
+scope: g_profile
+
+dn: uid=testuser5,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: testuser5
+sn: User 5
+givenName: Test
+cn: Test User 5
+displayName: Test User 5
+userPassword: {CRYPT}x
+scope: g_profile
+
+dn: uid=admin,ou=People,dc=dev,dc=msscf,dc=org
+objectClass: inetOrgPerson
+objectClass: glewlwydUser
+uid: admin
+sn: Admin
+givenName: Generic
+cn: Generic Admin
+displayName: Generic Admin
+userPassword: {CRYPT}x
+scope: g_profile
+scope: g_admin

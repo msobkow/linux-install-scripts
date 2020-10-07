@@ -1,0 +1,17 @@
+# glewlwyd.schema
+#
+#	The Glewlwyd OAuth2 server needs to keep a comma separated list of scope names
+#
+attributetype ( 1.1.100
+	NAME 'scope'
+	DESC 'Glewlwyd Scope Entry'
+	EQUALITY caseIgnoreMatch
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+objectclass	( 1.1.101
+    NAME 'glewlwydUser'
+	DESC 'Glewlwyd OAuth2 User'
+    SUP inetOrgPerson
+	MUST ( scope )
+	)
+

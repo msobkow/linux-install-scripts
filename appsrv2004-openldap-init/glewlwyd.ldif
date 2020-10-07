@@ -1,0 +1,9 @@
+# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 7da6edec
+dn: cn=glewlwyd,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: glewlwyd
+olcAttributeTypes: {0}( 1.1.100 NAME 'scope' DESC 'Glewlwyd Scope Entry' EQU
+ ALITY caseIgnoreMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+olcObjectClasses: {0}( 1.1.101 NAME 'glewlwydUser' DESC 'Glewlwyd OAuth2 Use
+ r' SUP inetOrgPerson STRUCTURAL MUST scope )
