@@ -32,6 +32,6 @@ if [ "$ENV_VAR_FOUND" == "" ]; then
 	echo 'q' >>add-to-env.ex
 	echo '' >>add-to-env.ex
 	sudo ex /etc/environment <add-to-env.ex
-	#rm add-to-env.ex 
+	rm -f add-to-env.ex 
 fi
 
