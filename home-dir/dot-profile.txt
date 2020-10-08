@@ -144,3 +144,17 @@ if [ "$SPRING4_HOME" != "" ]; then
 	fi
 	unset SPRING4_IN_PATH
 fi
+
+# We want eclipse to be on the command line
+if [ "$ECLIPSE_HOME" == "" ]; then
+	if [ -d $HOME/bin/eclipse-2020-09-R/eclipse ]; then
+		export ECLIPSE_HOME="$HOME/bin/eclipse-2020-09-R"
+		ECLIPSE_HOME_IN_PATH=`echo $PATH | grep "$ECLIPSE_HOME/eclipse"`
+		if [ "$ECLIPSE_HOME_IN_PATH" == "" ]; then
+			export PATH="$ECLIPSE_HOME/eclipse:$PATH"
+		fi
+		unset ECLIPSE_HOME_IN_PATH
+	else
+		unset ECLIPSE_HOME
+	fi
+fi
