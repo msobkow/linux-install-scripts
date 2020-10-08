@@ -145,8 +145,8 @@ export JAVACCMD="$JDK_HOME/bin/$JAVAC"
 
 # Check for latest release of Spring Tool Suite 4
 if [ "$SPRING4_HOME" == "" ]; then
-	if [ -d "$HOME/bin/sts-4.7.0.RELEASE" ]; then
-		export SPRING4_HOME="$HOME/bin/sts-4.7.0.RELEASE"
+	if [ -d "$HOME/bin/sts-4.8.0.RELEASE" ]; then
+		export SPRING4_HOME="$HOME/bin/sts-4.8.0.RELEASE"
 	fi
 fi
 if [ "$SPRING4_HOME" != "" ]; then
