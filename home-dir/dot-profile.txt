@@ -131,18 +131,6 @@ elif [ "$JFX_HOME" != "" ]; then
 	fi
 fi
 
-# Use default system installation of openjdk 11.0.7 for Java
-export JSEP=":"
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-export JDK_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-export JAVAC="javac"
-export JAVA="java"
-export PATH="$JDK_HOME/bin:$JDK_HOME/lib:$PATH"
-unset JAVAEXE
-unset JAVACEXE
-export JAVACMD="$JAVA_HOME/bin/$JAVA"
-export JAVACCMD="$JDK_HOME/bin/$JAVAC"
-
 # Check for latest release of Spring Tool Suite 4
 if [ "$SPRING4_HOME" == "" ]; then
 	if [ -d "$HOME/bin/sts-4.8.0.RELEASE" ]; then
