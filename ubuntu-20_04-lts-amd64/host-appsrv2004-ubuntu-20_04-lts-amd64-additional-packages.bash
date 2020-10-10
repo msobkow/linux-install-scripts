@@ -2,7 +2,7 @@
 # Stack for host appsrv2004.dev.msscf.org
 ./Install-Ubuntu-20_04-lts-amd64-03-perl.bash
 ./Install-Ubuntu-20_04-lts-amd64-04-python3.bash
-#./Install-Ubuntu-20_04-lts-amd64-05-1-java-jdk-11.bash
+./Install-Ubuntu-20_04-lts-amd64-05-1-java-jdk-11.bash
 ./Install-Ubuntu-20_04-lts-amd64-05-1-java-jdk-14.bash
 ./Install-Ubuntu-20_04-lts-amd64-05-2-java-additional.bash
 ./Install-Ubuntu-20_04-lts-amd64-06-gnucpp.bash
