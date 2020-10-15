@@ -23,7 +23,7 @@ if [ "$DISPLAY" == "" ]; then
 fi
 
 if [ "$TZ" == "" ]; then
-	export TZ="Etc/UTC"
+	export TZ="America/Regina"
 fi
 
 if [ "$BASH" == "" ]; then
