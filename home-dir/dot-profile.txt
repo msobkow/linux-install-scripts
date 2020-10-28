@@ -18,7 +18,19 @@ if [ "$HOSTNAME" == "" ]; then
 	export HOSTNAME=`hostname`
 fi
 
-if [[ $(who am i) =~ \([-a-zA-Z0-9\.]+\)$ ]]; then DISPLAY_TYPE="ssh"; else DISPLAY_TYPE="local"; fi
+# Determine whether we are dealing with a local or a remote display
+DISPLAY_TYPE="local"
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+	DISPLAY_TYPE="ssh"
+else
+	case $(ps -o comm= -p $PPID) in
+		sshd|*/sshd) DISPLAY_TYPE="ssh";;
+	esac
+fi
+
+if [ "$DISPLAY_TYPE" == "local" ]; then
+	if [[ $(who am i) =~ \([-a-zA-Z0-9\.]+\)$ ]]; then DISPLAY_TYPE="ssh"; else DISPLAY_TYPE="local"; fi
+fi
 export DISPLAY_TYPE
 
 if [ "$DISPLAY_TYPE" == "ssh" ]; then
