@@ -18,8 +18,11 @@ if [ "$HOSTNAME" == "" ]; then
 	export HOSTNAME=`hostname`
 fi
 
-if [ "$DISPLAY" == "" ]; then
-	export DISPLAY="$HOSTNAME:0.0"
+if [[ $(who am i) =~ \([-a-zA-Z0-9\.]+\)$ ]]; then DISPLAY_TYPE="ssh"; else DISPLAY_TYPE="local"; fi
+export DISPLAY_TYPE
+
+if [ "$DISPLAY_TYPE" == "ssh" ]; then
+	export DISPLAY="your-unsecured-x11-server-host:1.0"
 fi
 
 if [ "$TZ" == "" ]; then
