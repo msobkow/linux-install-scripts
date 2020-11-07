@@ -33,9 +33,9 @@ if [ "$DISPLAY_TYPE" == "local" ]; then
 fi
 export DISPLAY_TYPE
 
-if [ "$DISPLAY_TYPE" == "ssh" ]; then
-	export DISPLAY="your-unsecured-x11-server-host:1.0"
-fi
+#if [ "$DISPLAY_TYPE" == "ssh" ]; then
+#	export DISPLAY="your-unsecured-x11-server-host:1.0"
+#fi
 
 if [ "$TZ" == "" ]; then
 	export TZ="America/Regina"
