@@ -1,7 +1,17 @@
 # linux-install-scripts
 Linux install scripts for the environments I use, broken down by toolkit and product line per platform
 
-I only support Ubuntu VMs and hardware installs at this time; I do not support WSL1 installations any more.
+I only support Ubuntu VMs and hardware installs at this time; I do not support
+WSL1 installations any more. You could use the Ubuntu 20.04 scripts
+with WSL2, and treat WSL2 as a VM you connect to with an X11 server under
+Windows 10, such as VcXSrv.  That is how I used to run a GUI with WSL1.
+
+Microsoft underestimates the power of Open Source when they let people
+think there was no way to run a GUI with WSL1.  I don't think they wanted
+it to achieve wide adoption until they had their IDE integration for
+debugging their tool chain running clean.  Microsft only supports open
+source to the extent it benefits them, but it beats the old days when
+they actively fought against it.
 
 Each subdirectory contains the scripts used to initialize the tool chains
 required for the bind9, base, gui, java, postgresql, and mysql tool chains.
