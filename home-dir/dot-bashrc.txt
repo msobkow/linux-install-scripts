@@ -133,5 +133,4 @@ fi
 alias sts4='xterm -e SpringToolSuite4 &'
 alias eclipse='xterm -e eclipse &'
 alias netbeans='xterm -e netbeans &'
-alias keybase='xterm -e /opt/keybase/Keybase &'
 
