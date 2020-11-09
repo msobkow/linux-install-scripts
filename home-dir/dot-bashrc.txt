@@ -130,6 +130,13 @@ if [ "$SSH_AGENT_PID" != "" ]; then
 	fi
 fi
 
+HAVE_THUNDERBIRD=`which thunderbird`
+if [ "$HAVE_THUNDERBIRD" != "" ]; then
+	alias thunderbird='xterm -e thunderbird &'
+else
+	unalias thunderbird
+fi
+alias scenebuilder='xterm -e scenebuilder &'
 alias eclipse='xterm -e eclipse &'
 alias sts4='xterm -e SpringToolSuite4 &'
 alias netbeans='xterm -e netbeans &'
