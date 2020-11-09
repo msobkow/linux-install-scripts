@@ -122,16 +122,16 @@ else
 	unset ANT_IS_LOCAL
 fi
 
-# Prefer the most recent installation of OpenJFX we can find
-#if [ -d $HOME/bin/openjfx/javafx-sdk-15.0.1/lib ]; then
-#	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-15.0.1
-#	export PATH_TO_FX=$JFX_HOME/lib
-#	export PATH="$PATH_TO_FX:$PATH"
-#elif [ -d $HOME/bin/openjfx/javafx-sdk-15/lib ]; then
-#	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-15
-#	export PATH_TO_FX=$JFX_HOME/lib
-#	export PATH="$PATH_TO_FX:$PATH"
-if [ -d $HOME/bin/openjfx/javafx-sdk-14/lib ]; then
+# Prefer the most recent version of OpenJFX we can find
+if [ -d $HOME/bin/openjfx/javafx-sdk-15.0.1/lib ]; then
+	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-15.0.1
+	export PATH_TO_FX=$JFX_HOME/lib
+	export PATH="$PATH_TO_FX:$PATH"
+elif [ -d $HOME/bin/openjfx/javafx-sdk-15/lib ]; then
+	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-15
+	export PATH_TO_FX=$JFX_HOME/lib
+	export PATH="$PATH_TO_FX:$PATH"
+elif [ -d $HOME/bin/openjfx/javafx-sdk-14/lib ]; then
 	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-14
 	export PATH_TO_FX=$JFX_HOME/lib
 	export PATH="$PATH_TO_FX:$PATH"
