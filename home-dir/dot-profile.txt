@@ -122,13 +122,25 @@ else
 	unset ANT_IS_LOCAL
 fi
 
-# Prefer the system's OpenJFX 11 implementation
-if [ -d /usr/share/openjfx ]; then
-	export JFX_HOME=/usr/share/openjfx
+# Prefer the most recent installation of OpenJFX we can find
+#if [ -d $HOME/bin/openjfx/javafx-sdk-15.0.1/lib ]; then
+#	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-15.0.1
+#	export PATH_TO_FX=$JFX_HOME/lib
+#	export PATH="$PATH_TO_FX:$PATH"
+#elif [ -d $HOME/bin/openjfx/javafx-sdk-15/lib ]; then
+#	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-15
+#	export PATH_TO_FX=$JFX_HOME/lib
+#	export PATH="$PATH_TO_FX:$PATH"
+if [ -d $HOME/bin/openjfx/javafx-sdk-14/lib ]; then
+	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-14
+	export PATH_TO_FX=$JFX_HOME/lib
+	export PATH="$PATH_TO_FX:$PATH"
+elif [ -d $HOME/bin/openjfx/javafx-sdk-11.0.2/lib ]; then
+	export JFX_HOME=$HOME/bin/openjfx/javafx-sdk-11.0.2
 	export PATH_TO_FX="$JFX_HOME/lib"
 	export PATH="$PATH_TO_FX:$PATH"
-elif [ -d $HOME/bin/javafx-sdk-11.0.2 ]; then
-	export JFX_HOME=$HOME/bin/javafx-sdk-11.0.2
+elif [ -d /usr/share/openjfx ]; then
+	export JFX_HOME=/usr/share/openjfx
 	export PATH_TO_FX="$JFX_HOME/lib"
 	export PATH="$PATH_TO_FX:$PATH"
 elif [ "$JFX_HOME" != "" ]; then
@@ -146,23 +158,40 @@ elif [ "$JFX_HOME" != "" ]; then
 	fi
 fi
 
-# Check for latest release of Spring Tool Suite 4
-if [ "$STS4_HOME" == "" ]; then
-	if [ -d "$HOME/bin/sts-4.8.1.RELEASE" ]; then
-		export STS4_HOME="$HOME/bin/sts-4.8.1.RELEASE"
-	elif [ -d "$HOME/bin/sts-4.8.0.RELEASE" ]; then
-		export STS4_HOME="$HOME/bin/sts-4.8.0.RELEASE"
-	fi
+# We want Groovy installed in all cases, as it is commonly
+# used with Spring 4 code
+WHICH_GROOVY=`which groovy`
+if [ "$WHICH_GROOVY" == "" ]; then
+	sudo snap install groovy --classic
 fi
-if [ "$STS4_HOME" != "" ]; then
-	STS4_IN_PATH=`echo $PATH | grep "$STS4_HOME"`
-	if [ "$STS4_IN_PATH" == "" ]; then
-		export PATH="$PATH:$STS4_HOME"
-	fi
-	unset STS4_IN_PATH
+WHICH_GROOVY=`which groovy`
+if [ "$WHICH_GROOVY" == "" ]; then
+	echo "ERROR: Groovy was not found and the snap could not be installed."
 fi
+unset WHICH_GROOVY
+
+# Apache Netbeans 12.1+ is my preferred IDE.
+# Just do "sudo snap install netbeans --classic"
+WHICH_NETBEANS=`which netbeans`
+if [ "$WHICH_NETBEANS" == "" ]; then
+	sudo snap install netbeans --classic
+fi
+WHICH_NETBEANS=`which netbeans`
+if [ "$WHICH_NETBEANS" == "" ]; then
+	echo "ERROR: Apache Netbeans 12 or newer was not found and the snap could not be installed."
+fi
+unset WHICH_NETBEANS
 
 # We want eclipse to be on the command line
+# Eclipse 2020-09-R is the latest, but the snap for Ubuntu
+# is a stale release from 2019, so we don't use the snap.
+#
+# I want 100% up to date software everywhere I go, not
+# stale cruft that likely has security issues, performance
+# issues, and/or bugs.
+#
+# Download manually and install on a per-user basis or get someone to
+# keep tracking the CURRENT release of Eclipse with that Ubuntu snap.
 if [ "$ECLIPSE_HOME" == "" ]; then
 	if [ -d $HOME/bin/eclipse-2020-09-R/eclipse ]; then
 		export ECLIPSE_HOME="$HOME/bin/eclipse-2020-09-R"
@@ -175,3 +204,27 @@ if [ "$ECLIPSE_HOME" == "" ]; then
 		unset ECLIPSE_HOME
 	fi
 fi
+
+# Check for latest release of Spring Tool Suite 4
+#
+# I want 100% up to date software everywhere I go, not
+# stale cruft that likely has security issues, performance
+# issues, and/or bugs.
+#
+# Download manually and install on a per-user basis or get someone to
+# create and track a snap of the Spring Tool Suite 4 Eclipse Edition.
+if [ "$STS4_HOME" == "" ]; then
+	if [ -d "$HOME/bin/sts-4.8.1.RELEASE" ]; then
+		export STS4_HOME="$HOME/bin/sts-4.8.1.RELEASE"
+	elif [ -d "$HOME/bin/sts-4.8.0.RELEASE" ]; then
+		export STS4_HOME="$HOME/bin/sts-4.8.0.RELEASE"
+	fi
+fi
+if [ "$STS4_HOME" != "" ]; then
+	STS4_IN_PATH=`echo $PATH | grep "$STS4_HOME"`
+	if [ "$STS4_IN_PATH" == "" ]; then
+		export PATH="$STS4_HOME:$PATH"
+	fi
+	unset STS4_IN_PATH
+fi
+
