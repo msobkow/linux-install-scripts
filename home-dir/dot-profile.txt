@@ -147,17 +147,19 @@ elif [ "$JFX_HOME" != "" ]; then
 fi
 
 # Check for latest release of Spring Tool Suite 4
-if [ "$SPRING4_HOME" == "" ]; then
-	if [ -d "$HOME/bin/sts-4.8.0.RELEASE" ]; then
-		export SPRING4_HOME="$HOME/bin/sts-4.8.0.RELEASE"
+if [ "$STS4_HOME" == "" ]; then
+	if [ -d "$HOME/bin/sts-4.8.1.RELEASE" ]; then
+		export STS4_HOME="$HOME/bin/sts-4.8.1.RELEASE"
+	elif [ -d "$HOME/bin/sts-4.8.0.RELEASE" ]; then
+		export STS4_HOME="$HOME/bin/sts-4.8.0.RELEASE"
 	fi
 fi
-if [ "$SPRING4_HOME" != "" ]; then
-	SPRING4_IN_PATH=`echo $PATH | grep "$SPRING4_HOME"`
-	if [ "$SPRING4_IN_PATH" == "" ]; then
-		export PATH="$PATH:$SPRING4_HOME"
+if [ "$STS4_HOME" != "" ]; then
+	STS4_IN_PATH=`echo $PATH | grep "$STS4_HOME"`
+	if [ "$STS4_IN_PATH" == "" ]; then
+		export PATH="$PATH:$STS4_HOME"
 	fi
-	unset SPRING4_IN_PATH
+	unset STS4_IN_PATH
 fi
 
 # We want eclipse to be on the command line

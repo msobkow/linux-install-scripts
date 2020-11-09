@@ -15,4 +15,6 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
+
+# This installs Apache Netbeans 12.1 or newer
 sudo snap install netbeans --classic
