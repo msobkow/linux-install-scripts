@@ -136,6 +136,7 @@ if [ "$HAVE_THUNDERBIRD" != "" ]; then
 else
 	unalias thunderbird
 fi
+alias chrome='xterm -e /opt/google/chrome/chrome &'
 alias scenebuilder='xterm -e scenebuilder &'
 alias eclipse='xterm -e eclipse &'
 alias sts4='xterm -e SpringToolSuite4 &'
