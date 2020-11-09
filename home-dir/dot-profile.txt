@@ -158,6 +158,28 @@ elif [ "$JFX_HOME" != "" ]; then
 	fi
 fi
 
+# Prefer local installation of OpenJDK 15
+if [ -d /home/msobkow/bin/openjdk/15/jdk-15.0.1 ]; then
+	export JAVA_HOME="/home/msobkow/bin/openjdk/15/jdk-15.0.1"
+	export JDK_HOME="/home/msobkow/bin/openjdk/15/jdk-15.0.1"
+elif [ -d /usr/lib/jvm/java-14-openjdk-amd64/bin/java ]; then
+	export JAVA_HOME="/usr/lib/jvm/java-14-openjdk-amd64/bin/java"
+	export JDK_HOME="/usr/lib/jvm/java-14-openjdk-amd64/bin/java"
+elif [ -d /usr/lib/jvm/java-11-openjdk-amd64/bin/java ]; then
+	export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"
+	export JDK_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"
+else
+	unset JAVA_HOME
+	unset JDK_HOME
+fi
+if [ "$JDK_HOME" != "" ]; then
+	JDK_IN_PATH=`echo $PATH | grep $JDK_HOME`
+	if [ "$JDK_IN_PATH" == "" ]; then
+		export PATH="$JDK_HOME/bin:$PATH"
+	fi
+	unset JDK_IN_PATH
+fi
+
 # We want Groovy installed in all cases, as it is commonly
 # used with Spring 4 code
 WHICH_GROOVY=`which groovy`
