@@ -130,7 +130,6 @@ if [ "$SSH_AGENT_PID" != "" ]; then
 	fi
 fi
 
-alias sts4='xterm -e SpringToolSuite4 &'
 alias eclipse='xterm -e eclipse &'
+alias sts4='xterm -e SpringToolSuite4 &'
 alias netbeans='xterm -e netbeans &'
-
