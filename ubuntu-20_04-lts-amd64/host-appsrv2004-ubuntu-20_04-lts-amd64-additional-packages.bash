@@ -23,3 +23,5 @@
 ./Install-Ubuntu-20_04-lts-amd64-openldap-srv.bash
 ./Install-Ubuntu-20_04-lts-amd64-99-gnu-cash.bash
 ./Install-Ubuntu-20_04-lts-amd64-99-tigervnc.bash
+./Install-Ubuntu-20_04-lts-amd64-99-groovy.bash
+./Install-Ubuntu-20_04-lts-amd64-99-netbeans-12_1.bash
