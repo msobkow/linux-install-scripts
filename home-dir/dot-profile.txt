@@ -233,12 +233,18 @@ fi
 # stale cruft that likely has security issues, performance
 # issues, and/or bugs.
 #
+# 2020-11-10 Unfortunately in this case, STS 4.8.1 breaks
+# the Lombok support for the JDK in the IDE, resulting in
+# a storm of unresolved symbol references, although the code
+# will actually build and run properly via Maven.
+# For now, stick with the downlevel STS 4.8.0 release
+#
 # Download manually and install on a per-user basis or get someone to
 # create and track a snap of the Spring Tool Suite 4 Eclipse Edition.
 if [ "$STS4_HOME" == "" ]; then
-	if [ -d "$HOME/bin/sts-4.8.1.RELEASE" ]; then
-		export STS4_HOME="$HOME/bin/sts-4.8.1.RELEASE"
-	elif [ -d "$HOME/bin/sts-4.8.0.RELEASE" ]; then
+#	if [ -d "$HOME/bin/sts-4.8.1.RELEASE" ]; then
+#		export STS4_HOME="$HOME/bin/sts-4.8.1.RELEASE"
+	if [ -d "$HOME/bin/sts-4.8.0.RELEASE" ]; then
 		export STS4_HOME="$HOME/bin/sts-4.8.0.RELEASE"
 	fi
 fi
