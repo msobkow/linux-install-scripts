@@ -26,3 +26,4 @@
 ./Install-Ubuntu-20_04-lts-amd64-99-groovy.bash
 ./Install-Ubuntu-20_04-lts-amd64-99-eclipse.bash
 ./Install-Ubuntu-20_04-lts-amd64-99-netbeans.bash
+./Install-Ubuntu-20_04-lts-amd64-99-wireshark.bash
