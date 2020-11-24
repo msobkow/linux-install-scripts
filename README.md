@@ -29,8 +29,8 @@ Desktop Display Options
 VcXSrv for Windows 10 takes advantage of hardware acceleration and
 provides about as full-featured an X-Server as you could ask for.
 Performance over an unsecured local connection to my VMs outperforms
-the UI performance under the Microsoft V-Sphere virtual consoles,
-which don't provide hardware acceleration, but rely on a bitmap
+the UI performance under the Microsoft virtual consoles,
+which doesn't provide hardware acceleration, but relies on a bitmap
 frame buffer display wedge.  The difference is very noticeable, right
 down to key presses displaying characters faster.  At 70-80 WPM on my
 best days, the Microsoft stack used to lag just enough to be irritating.
