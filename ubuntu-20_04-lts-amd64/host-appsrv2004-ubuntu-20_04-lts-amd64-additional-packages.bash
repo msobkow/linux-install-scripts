@@ -1,5 +1,5 @@
 #!/bin/bash
-# Stack for host appsrv2004.dev.msscf.org
+# Stack for host appsrv2004.dev.msscode.com
 ./Install-Ubuntu-20_04-lts-amd64-03-perl.bash
 ./Install-Ubuntu-20_04-lts-amd64-04-python3.bash
 ./Install-Ubuntu-20_04-lts-amd64-05-1-java-jdk-11.bash
