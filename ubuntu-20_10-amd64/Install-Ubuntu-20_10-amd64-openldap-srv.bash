@@ -16,7 +16,7 @@
 #		limitations under the License.
 #
 # First step is the dev tools
-./Install-Ubuntu-20_04-lts-amd64-15-openldap-dev.bash
+./Install-Ubuntu-20_10-amd64-15-openldap-dev.bash
 
 # Now for the server components
 sudo apt-get install slapd ldap-account-manager ldap-account-manager-lamdaemon ldap-git-backup
