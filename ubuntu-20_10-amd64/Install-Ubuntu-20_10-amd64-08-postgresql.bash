@@ -15,5 +15,5 @@
 #		See the License for the specific language governing permissions and
 #		limitations under the License.
 #
-sudo apt-get install postgresql pgadmin3-data pgadmin3 libpostgresql-jdbc-java libpostgresql-jdbc-java-doc odbc-postgresql odbcinst php-odbc python3-pyodbc python3-pyodbc-dbg unixodbc unixodbc-dev
+sudo apt-get install postgresql phppgadmin libpostgresql-jdbc-java libpostgresql-jdbc-java-doc odbc-postgresql odbcinst php-odbc python3-postgresql unixodbc unixodbc-dev postgresql-doc
 

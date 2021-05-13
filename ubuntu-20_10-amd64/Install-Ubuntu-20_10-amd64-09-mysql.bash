@@ -16,4 +16,3 @@
 #		limitations under the License.
 #
 sudo apt-get install odbcinst php-mysql php-odbc python3-pyodbc python3-pyodbc-dbg unixodbc unixodbc-dev mysql-client mysql-common mysql-server
-
